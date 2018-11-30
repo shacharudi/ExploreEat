@@ -1,25 +1,29 @@
 PODS:
   - PureLayout (3.1.4)
+  - SwiftLint (0.29.0)
   - Swinject (2.5.0)
   - SwinjectAutoregistration (2.5.1):
     - Swinject (~> 2.5)
 
 DEPENDENCIES:
   - PureLayout
+  - SwiftLint
   - Swinject
   - SwinjectAutoregistration
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - PureLayout
+    - SwiftLint
     - Swinject
     - SwinjectAutoregistration
 
 SPEC CHECKSUMS:
   PureLayout: f08c01b8dec00bb14a1fefa3de4c7d9c265df85e
+  SwiftLint: d4e7443d93e2bbe868dc302e6c7ac30b469d6a14
   Swinject: 82cdb851f63f91bba974e3eca1d69780f2f7677e
   SwinjectAutoregistration: f72bf894cbd2ee4a9153e00fa5208e93fb44d283
 
-PODFILE CHECKSUM: e04dd91a4d6fb7b06d4db99b3ca1a6599c1d72bf
+PODFILE CHECKSUM: 2b694344606c0cd0c9c5fdc883d70e6622692a9b
 
 COCOAPODS: 1.5.3

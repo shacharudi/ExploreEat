@@ -8,11 +8,11 @@
 
 import UIKit
 
-class HomeVC: UIViewController {
+class HomeVC: UINavigationController {
 
-    private let viewModel: HomeVCViewModel
+    private let viewModel: HomeVCViewModelType
     
-    init(viewModel: HomeVCViewModel) {
+    init(viewModel: HomeVCViewModelType) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
     }
@@ -25,4 +25,6 @@ class HomeVC: UIViewController {
         super.viewDidLoad()
         self.view.backgroundColor = .red
     }
+    
+    // MARK: - View Setup
 }

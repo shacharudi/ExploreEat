@@ -31,6 +31,6 @@ class AppBuilder {
     }
     
     private func registerViewModels() {
-        self.container.autoregister(HomeVCViewModel.self, initializer: HomeVCViewModel.init)
+        self.container.autoregister(HomeVCViewModelType.self, initializer: HomeVCViewModel.init)
     }
 }

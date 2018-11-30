@@ -9,7 +9,14 @@
 import Foundation
 import UIKit
 
-class HomeVCViewModel {
+protocol HomeVCViewModelType {
+    var viewTitle: String { get }
+}
+
+class HomeVCViewModel: HomeVCViewModelType {
+    
+    public var viewTitle: String = Texts.homeVCViewTitle
+    
     init() {
         
     }

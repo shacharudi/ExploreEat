@@ -5,6 +5,7 @@ def installPods
   pod 'Swinject'
   pod 'SwinjectAutoregistration'
   pod 'PureLayout'
+  pod 'SwiftLint'
 end
 
 target 'RestaurantsExplorer' do
