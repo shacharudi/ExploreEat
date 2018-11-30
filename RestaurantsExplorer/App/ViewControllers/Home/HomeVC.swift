@@ -11,6 +11,7 @@ import UIKit
 class HomeVC: UIViewController {
 
     private let viewModel: HomeVCViewModelType
+    private let searchController = UISearchController.init(searchResultsController: nil)
     
     init(viewModel: HomeVCViewModelType) {
         self.viewModel = viewModel
@@ -32,6 +33,11 @@ class HomeVC: UIViewController {
         self.view.backgroundColor = Colors.viewControllerBackground
         self.title = self.viewModel.viewTitle
         
+        self.setupNavigationButtons()
+        self.setupNavigationSearch()
+    }
+    
+    private func setupNavigationButtons() {
         let plusButton = UIBarButtonItem.init(
             image: Icons.plusIcon,
             style: .plain, target: self,
@@ -40,7 +46,21 @@ class HomeVC: UIViewController {
         self.navigationItem.rightBarButtonItem  = plusButton
     }
     
+    private func setupNavigationSearch() {
+        self.searchController.searchResultsUpdater = self
+        self.searchController.searchBar.placeholder = Texts.homeVCSearchTitle
+        self.navigationItem.searchController = self.searchController
+    }
+    
+    // MARK: - Navigation Actions
+    
     @objc private func tappedPlusButton() {
+        
+    }
+}
+
+extension HomeVC: UISearchResultsUpdating {
+    func updateSearchResults(for searchController: UISearchController) {
         
     }
 }

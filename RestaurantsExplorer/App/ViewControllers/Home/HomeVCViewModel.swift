@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import Hydra
 
 protocol HomeVCViewModelType {
     var viewTitle: String { get }

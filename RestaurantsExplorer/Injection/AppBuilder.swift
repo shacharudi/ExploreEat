@@ -21,6 +21,7 @@ class AppBuilder {
         self.registerNavigationControllers()
         self.registerViewControllers()
         self.registerViewModels()
+        self.registerServices()
     }
     
     public func rootViewController() -> UIViewController {
@@ -38,5 +39,9 @@ class AppBuilder {
     
     private func registerViewModels() {
         self.container.autoregister(HomeVCViewModelType.self, initializer: HomeVCViewModel.init)
+    }
+    
+    private func registerServices() {
+        self.container.autoregister(SearchLocationsService.self, initializer: SearchLocationsService.init)
     }
 }

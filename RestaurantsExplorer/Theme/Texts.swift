@@ -10,4 +10,5 @@ import Foundation
 
 enum Texts {
     static let homeVCViewTitle: String = "ExploreEat"
+    static let homeVCSearchTitle: String = "Search"
 }
