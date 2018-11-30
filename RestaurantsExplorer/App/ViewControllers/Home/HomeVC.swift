@@ -31,5 +31,16 @@ class HomeVC: UIViewController {
     private func setupView() {
         self.view.backgroundColor = Colors.viewControllerBackground
         self.title = self.viewModel.viewTitle
+        
+        let plusButton = UIBarButtonItem.init(
+            image: Icons.plusIcon,
+            style: .plain, target: self,
+            action: #selector(self.tappedPlusButton)
+        )
+        self.navigationItem.rightBarButtonItem  = plusButton
+    }
+    
+    @objc private func tappedPlusButton() {
+        
     }
 }

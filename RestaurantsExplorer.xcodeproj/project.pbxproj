@@ -24,6 +24,7 @@
 		C7D78CAD21B1725E00406AE4 /* Metrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D78CAC21B1725E00406AE4 /* Metrics.swift */; };
 		C7D78CB021B1751800406AE4 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D78CAF21B1751800406AE4 /* Colors.swift */; };
 		C7D78CB221B175E500406AE4 /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D78CB121B175E500406AE4 /* MainNavigationController.swift */; };
+		C7D78CB421B179B600406AE4 /* Icons.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D78CB321B179B600406AE4 /* Icons.swift */; };
 		FA21E299B2999266AB2D9676 /* Pods_RestaurantsExplorerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB6F467A91577D9A056EFAAE /* Pods_RestaurantsExplorerTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -73,6 +74,7 @@
 		C7D78CAC21B1725E00406AE4 /* Metrics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Metrics.swift; sourceTree = "<group>"; };
 		C7D78CAF21B1751800406AE4 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		C7D78CB121B175E500406AE4 /* MainNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
+		C7D78CB321B179B600406AE4 /* Icons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icons.swift; sourceTree = "<group>"; };
 		CF94AF730349E984B15A8E0B /* Pods-RestaurantsExplorer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RestaurantsExplorer.release.xcconfig"; path = "Pods/Target Support Files/Pods-RestaurantsExplorer/Pods-RestaurantsExplorer.release.xcconfig"; sourceTree = "<group>"; };
 		FB6F467A91577D9A056EFAAE /* Pods_RestaurantsExplorerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RestaurantsExplorerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -241,6 +243,7 @@
 				C7D78CAA21B1724B00406AE4 /* Texts.swift */,
 				C7D78CAC21B1725E00406AE4 /* Metrics.swift */,
 				C7D78CAF21B1751800406AE4 /* Colors.swift */,
+				C7D78CB321B179B600406AE4 /* Icons.swift */,
 			);
 			path = Theme;
 			sourceTree = "<group>";
@@ -448,6 +451,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-RestaurantsExplorer/Pods-RestaurantsExplorer-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/PureLayout/PureLayout.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftIcons/SwiftIcons.framework",
 				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
 				"${BUILT_PRODUCTS_DIR}/SwinjectAutoregistration/SwinjectAutoregistration.framework",
 			);
@@ -456,6 +460,7 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PureLayout.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftIcons.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwinjectAutoregistration.framework",
 			);
@@ -495,6 +500,7 @@
 			files = (
 				C7D78CA621B16EFA00406AE4 /* ViewController.swift in Sources */,
 				C7D78CB021B1751800406AE4 /* Colors.swift in Sources */,
+				C7D78CB421B179B600406AE4 /* Icons.swift in Sources */,
 				C7D78C9E21B13AEA00406AE4 /* AppContainerVC.swift in Sources */,
 				C7D78CB221B175E500406AE4 /* MainNavigationController.swift in Sources */,
 				C7D78CA321B16C8400406AE4 /* HomeVC.swift in Sources */,
