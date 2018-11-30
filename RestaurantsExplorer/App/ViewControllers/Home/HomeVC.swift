@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HomeVC: UINavigationController {
+class HomeVC: UIViewController {
 
     private let viewModel: HomeVCViewModelType
     
@@ -23,8 +23,13 @@ class HomeVC: UINavigationController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = .red
+        self.setupView()
     }
     
     // MARK: - View Setup
+    
+    private func setupView() {
+        self.view.backgroundColor = Colors.viewControllerBackground
+        self.title = self.viewModel.viewTitle
+    }
 }

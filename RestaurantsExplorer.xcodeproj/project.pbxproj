@@ -22,6 +22,8 @@
 		C7D78CA821B16F5E00406AE4 /* HomeVCViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D78CA721B16F5E00406AE4 /* HomeVCViewModel.swift */; };
 		C7D78CAB21B1724B00406AE4 /* Texts.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D78CAA21B1724B00406AE4 /* Texts.swift */; };
 		C7D78CAD21B1725E00406AE4 /* Metrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D78CAC21B1725E00406AE4 /* Metrics.swift */; };
+		C7D78CB021B1751800406AE4 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D78CAF21B1751800406AE4 /* Colors.swift */; };
+		C7D78CB221B175E500406AE4 /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D78CB121B175E500406AE4 /* MainNavigationController.swift */; };
 		FA21E299B2999266AB2D9676 /* Pods_RestaurantsExplorerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB6F467A91577D9A056EFAAE /* Pods_RestaurantsExplorerTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +71,8 @@
 		C7D78CA721B16F5E00406AE4 /* HomeVCViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVCViewModel.swift; sourceTree = "<group>"; };
 		C7D78CAA21B1724B00406AE4 /* Texts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Texts.swift; sourceTree = "<group>"; };
 		C7D78CAC21B1725E00406AE4 /* Metrics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Metrics.swift; sourceTree = "<group>"; };
+		C7D78CAF21B1751800406AE4 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		C7D78CB121B175E500406AE4 /* MainNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
 		CF94AF730349E984B15A8E0B /* Pods-RestaurantsExplorer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RestaurantsExplorer.release.xcconfig"; path = "Pods/Target Support Files/Pods-RestaurantsExplorer/Pods-RestaurantsExplorer.release.xcconfig"; sourceTree = "<group>"; };
 		FB6F467A91577D9A056EFAAE /* Pods_RestaurantsExplorerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RestaurantsExplorerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -208,6 +212,7 @@
 			isa = PBXGroup;
 			children = (
 				C7D78CA121B16C4D00406AE4 /* Home */,
+				C7D78CB121B175E500406AE4 /* MainNavigationController.swift */,
 				C7D78C9D21B13AEA00406AE4 /* AppContainerVC.swift */,
 			);
 			path = ViewControllers;
@@ -235,6 +240,7 @@
 			children = (
 				C7D78CAA21B1724B00406AE4 /* Texts.swift */,
 				C7D78CAC21B1725E00406AE4 /* Metrics.swift */,
+				C7D78CAF21B1751800406AE4 /* Colors.swift */,
 			);
 			path = Theme;
 			sourceTree = "<group>";
@@ -488,7 +494,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7D78CA621B16EFA00406AE4 /* ViewController.swift in Sources */,
+				C7D78CB021B1751800406AE4 /* Colors.swift in Sources */,
 				C7D78C9E21B13AEA00406AE4 /* AppContainerVC.swift in Sources */,
+				C7D78CB221B175E500406AE4 /* MainNavigationController.swift in Sources */,
 				C7D78CA321B16C8400406AE4 /* HomeVC.swift in Sources */,
 				C704BFB521B132B7006B377F /* AppDelegate.swift in Sources */,
 				C7D78CAD21B1725E00406AE4 /* Metrics.swift in Sources */,

@@ -12,10 +12,10 @@ import PureLayout
 
 class AppContainerVC: UIViewController {
     
-    private let homeVC: HomeVC
+    private let mainNavigation: MainNavigationController
     
-    init(homeVC: HomeVC) {
-        self.homeVC = homeVC
+    init(mainNavigation: MainNavigationController) {
+        self.mainNavigation = mainNavigation
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -28,10 +28,10 @@ class AppContainerVC: UIViewController {
     }
     
     private func showHomeVC() {
-        self.homeVC.view.alpha = 0
-        self.addSubviewVC(viewController: self.homeVC)
+        self.mainNavigation.view.alpha = 0
+        self.addSubviewVC(viewController: self.mainNavigation)
         UIView.animate(withDuration: 0.2) {
-            self.homeVC.view.alpha = 1
+            self.mainNavigation.view.alpha = 1
         }
     }
 }

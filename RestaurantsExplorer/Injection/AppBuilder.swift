@@ -17,12 +17,18 @@ class AppBuilder {
         self.container.register(Container.self) { [unowned self] _ in
             return self.container
         }
+        
+        self.registerNavigationControllers()
         self.registerViewControllers()
         self.registerViewModels()
     }
     
     public func rootViewController() -> UIViewController {
         return self.container.resolve(AppContainerVC.self)!
+    }
+    
+    private func registerNavigationControllers() {
+        self.container.autoregister(MainNavigationController.self, initializer: MainNavigationController.init)
     }
     
     private func registerViewControllers() {
