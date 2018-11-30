@@ -7,15 +7,66 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		12F67F3895D4C1147E4D900D1B9D07F2 /* Pods-RestaurantsExplorer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 69883845041B6547E5EF10E36E4468D8 /* Pods-RestaurantsExplorer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		01F535E2D6457F591D825B282D95DA6A /* AutoRegistration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD2C2B38FBDF781DECDB2FFAC56B0EC /* AutoRegistration.swift */; };
+		0231A915BD7E8034C04ADC4DDBE6730B /* ALView+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F021170EB335DCDFD772B5985AA6C560 /* ALView+PureLayout.m */; };
+		0F3B25429E74C23BDA071C18A16A6851 /* ObjectScope.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE429EF88920718138F62025427361F /* ObjectScope.swift */; };
+		12FBA83948B5DE41578A4429C9A69C94 /* Swinject-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EDB2539137A6D124071C0B2FCCB7EFC /* Swinject-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19F8A841931C8C938650EA5EEC793F9A /* Container.TypeForwarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = B671D5F3A987342411B398E5DB996E66 /* Container.TypeForwarding.swift */; };
+		1EC128E3DD2D4DE44CE6E96254C13F5B /* ServiceEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEC4757AC5539CCA307AFC0020DE148 /* ServiceEntry.swift */; };
+		289762474842576C8423919E987B7F20 /* TypeParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B802F195F4EBE71428138B95956ABC /* TypeParser.swift */; };
+		29031705411AF02D9EA286E00B27F091 /* SwinjectAutoregistration-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CE2FE4F6FD3BA7FD076C88084CD17336 /* SwinjectAutoregistration-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2C9792582787241D279772E67488BCE6 /* Resolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9AC035526774F4CFFD63907291E170E /* Resolver.swift */; };
+		2E2D06BF29FC70BD801475E2A85FB643 /* Assembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD51A124B742FA2EFB7FC5F5B51A521 /* Assembly.swift */; };
 		3553FBD02A2E64E7D6E377341214E537 /* Pods-RestaurantsExplorerUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AF6F61FEEC786599CD7E523BC2933323 /* Pods-RestaurantsExplorerUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		425C614A9F94B41834D00D8D04EF460A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		3B440C93E67C63B3250904209E4607B4 /* ServiceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158DE2BB988401BC6402019D89B81AC8 /* ServiceKey.swift */; };
+		4008D70D7C8DDA9257D20F7825657F25 /* SpinLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225C1C363809553BDE7AFF5C5DD5B595 /* SpinLock.swift */; };
+		41B0F4519F28BD6D508DE20E8544513B /* NSArray+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 56E22AF539D870609DCAD469EFCD5504 /* NSArray+PureLayout.m */; };
+		425C614A9F94B41834D00D8D04EF460A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAF08F22280D1AB0F6BB58624F3937FF /* Foundation.framework */; };
+		4672DFED6D3B22C1D59F164439554D55 /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33EED10ADEF7D02A32EF881228FB38A5 /* Swinject.framework */; };
+		46AB69F8E6255EAC2D15963981FD7D8F /* DebugHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DDB8864B162EFF928C94721E5B8421 /* DebugHelper.swift */; };
+		4849A681EC28B15F76584610C2C2F172 /* Pods-RestaurantsExplorer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AEBE6E25414627CB3D49551FE6E356D8 /* Pods-RestaurantsExplorer-dummy.m */; };
+		48C20013A37E944B8670A632AB06AB77 /* Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0AD92B7F45548D4B061E7E23632661 /* Type.swift */; };
+		4E4C600108D46DB2E1F74DFD1C8839A3 /* NSLayoutConstraint+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = BF981D4F78D7BE06F78EF14C2B6675D8 /* NSLayoutConstraint+PureLayout.m */; };
 		50DEE10AD617711576F2FBAE4EC3F2CF /* Pods-RestaurantsExplorerUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 70364D1940F97210EC6C13ACCF2D81F4 /* Pods-RestaurantsExplorerUITests-dummy.m */; };
+		5295D75E600F32E5E9C806179E1C1EAC /* SynchronizedResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C8EA0BAA558C222F35F302609D5A8B /* SynchronizedResolver.swift */; };
+		5BB4C62FA25FF8D90B6A19D79A16E48F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAF08F22280D1AB0F6BB58624F3937FF /* Foundation.framework */; };
 		5CB24B33C0DEBE9560D1E8BAAF8F80E2 /* Pods-RestaurantsExplorerTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 403405E0EE0EA228E20B24A1E76F0E7D /* Pods-RestaurantsExplorerTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7BEC65A9A6C0380A62A668E215C4FD8A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		8D77F1B08F682DEF85C37A093E6025DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		97B6FAFA68E3B64E7C43F1743BFF037E /* Pods-RestaurantsExplorer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AEBE6E25414627CB3D49551FE6E356D8 /* Pods-RestaurantsExplorer-dummy.m */; };
+		5F8662817A531B981AD2ED1C67343175 /* SwinjectAutoregistration.h in Headers */ = {isa = PBXBuildFile; fileRef = 178CECA4386F22D00CB28964A369880F /* SwinjectAutoregistration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6D8ECA98793E91574BABFACFC3587705 /* GraphIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E33A766EAEC05B4C424DF380DC1575 /* GraphIdentifier.swift */; };
+		745968F2290DEE39F7E7761AF3A95F1C /* Resolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87DE0AA40F0051BF2CF75C86F1EA02A /* Resolver.swift */; };
+		7B29CE6C41E975959B3FC504DA5A64F8 /* Pods-RestaurantsExplorer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 69883845041B6547E5EF10E36E4468D8 /* Pods-RestaurantsExplorer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7C6E7F7549EEA042EDD15BB2214B5DD8 /* InstanceWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CE682A2A0251EA01A94C294FE3686A /* InstanceWrapper.swift */; };
+		7E8BE6D727212233F2CFD7C5CCC1542D /* PureLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D500795855C6D88CAF33299F7AAEAC4 /* PureLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8685F0067D3CF147DE1E65699C27C334 /* Container.Arguments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5981D6DA6E3A8A2132AC1B5436CB18A8 /* Container.Arguments.swift */; };
+		872F49EC61535290132390D1941A7171 /* _Resolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = D532EEF32F310BA6E65AE651FCB1FAB7 /* _Resolver.swift */; };
+		8D77F1B08F682DEF85C37A093E6025DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAF08F22280D1AB0F6BB58624F3937FF /* Foundation.framework */; };
+		8E180FCF19C88A5C1B4F2917C64F6B67 /* CheckResolved.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360243D30E1F88FFB74CA6509AEB1ACD /* CheckResolved.swift */; };
+		A054E1BDD6BF052DBB317384FCB0BD99 /* NSLayoutConstraint+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E46AA5C6934D1723F674C7962E4B6A6 /* NSLayoutConstraint+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A67DD2266D2B1E339B4087CB151C05CF /* SwinjectAutoregistration-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59594EDFBC51F75A0F7155218F8BE733 /* SwinjectAutoregistration-dummy.m */; };
+		AE8B97A3F3D4FB1701DEDB5214048612 /* PureLayoutDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 814FC3198DD9CCC5DDCF83B2C8084A62 /* PureLayoutDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AFEFFF6BE5BB1318CAF580306E9DB7ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAF08F22280D1AB0F6BB58624F3937FF /* Foundation.framework */; };
+		B7A495B374FA1FD503A1E3E354C6332C /* PureLayout+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 35CCF3C2813A65BC0792881C8E4867CF /* PureLayout+Internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BBCF83FB82CEBCA7F1F00604739AFEFE /* Swinject-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 45F82CD0B1A60008B85686EC7F7A5B20 /* Swinject-dummy.m */; };
+		BEE8D730E539DDC53CE34F29E6B4918A /* Container.Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBB1F4176A98C3CA7908E6A39095414 /* Container.Logging.swift */; };
+		C4626C25816D368638157528EED58FB9 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66414F7274DB2373C6011A0DA365EF14 /* Operators.swift */; };
+		C59958FAA77C1F249510B369089B84F9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAF08F22280D1AB0F6BB58624F3937FF /* Foundation.framework */; };
+		C74F3401CAC469B1CDAEF30A64529852 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAF08F22280D1AB0F6BB58624F3937FF /* Foundation.framework */; };
+		C8CFC7C0C7EBBA29905057C81904A49E /* Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604C10B9B4C67AFFAC67591B3F9B0EF9 /* Container.swift */; };
+		C90761304E874995CB30885447586A5B /* Behavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = C80AE5236D79B8B152F9F0B13202332D /* Behavior.swift */; };
+		C96CCCC558ABEC7D6B274CD800738B36 /* UnavailableItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FEA04D72C6C6B48C4AFF85446A7BDA /* UnavailableItems.swift */; };
+		CA9944D5EC790B4E900968A8D7C9A3F1 /* ResolutionError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CC2035BE70C48B28D8DD5AA643C449 /* ResolutionError.swift */; };
+		CE3A9647198FF0F996B4C27EEADFAA40 /* FunctionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459FB35C54F59AA9950A47814A5D1C17 /* FunctionType.swift */; };
+		D9418D692C04FB8819611EA8FFF0036E /* PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = C358BB0AE121533C11AD1EDD7D666240 /* PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DD88258DD3CE8529AABEF790DAEFB245 /* ObjectScope.Standard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA68102A338800FEE558D0FF4C1094A3 /* ObjectScope.Standard.swift */; };
 		DE3B5599CF475C5EF72D8266229D92FF /* Pods-RestaurantsExplorerTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 864E845B5E04C20A4EE134C9BB4E3412 /* Pods-RestaurantsExplorerTests-dummy.m */; };
+		E19334B65547EC9518A981A571D835A9 /* NSArray+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AE5E2EDF934DD6EE4C9ECF6418F4039 /* NSArray+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E698616B8929AF3D7E3FEACF8CD5CE78 /* SynchronizedResolver.Arguments.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14E85D2E70974493DF957A99D6E3C43 /* SynchronizedResolver.Arguments.swift */; };
+		ED2A39EDA7961EAA813790EE7FA287A9 /* ServiceEntry.TypeForwarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8285BD51B621BA09E0BE5FFCB0B4A946 /* ServiceEntry.TypeForwarding.swift */; };
+		F34F56C719FED127A0EC9F31CEBA78C3 /* InstanceStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA849289FD4C954CD4BDC020BD069A7 /* InstanceStorage.swift */; };
+		F7A18E35B5027D3BEFC188E5FD960380 /* ALView+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 920990EE9BADB27CB68BCF2C9354A3E7 /* ALView+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F8F04E95D6E8D37B7FE0C0770427C28B /* Swinject.h in Headers */ = {isa = PBXBuildFile; fileRef = 4617F1376C5CFEA535AA57718F7EAA63 /* Swinject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FCA1783B48E39F64FE97788AD51A663B /* Assembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC11DFD738293A6587DDC47D36161F6A /* Assembler.swift */; };
+		FFFACE3E7D77F3D0EB5E0ACBFB8F88AB /* PureLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FC0479D50B4ED8313BF05F01B8C2E6 /* PureLayout-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,54 +74,145 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = CD3FB5D99B2BD51ECF87EFC97439768A;
+			remoteGlobalIDString = 1088E7C6220A357CB784E42F8745C572;
 			remoteInfo = "Pods-RestaurantsExplorer";
+		};
+		BE9075FDC6627F1092AF239DF2604148 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FE6A176DD8A744BDC2C8ED08C4E90549;
+			remoteInfo = SwinjectAutoregistration;
+		};
+		C97DD5C77BFB4B0653287310973A8E47 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C9F634D806FFE5B06392B9861D670ABD;
+			remoteInfo = Swinject;
+		};
+		D131325FF3ACBA748C2D476C1054344E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C9F634D806FFE5B06392B9861D670ABD;
+			remoteInfo = Swinject;
 		};
 		D50DEDCC6836705C4BDBAFF499DC3AEF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = CD3FB5D99B2BD51ECF87EFC97439768A;
+			remoteGlobalIDString = 1088E7C6220A357CB784E42F8745C572;
 			remoteInfo = "Pods-RestaurantsExplorer";
+		};
+		DF98DB8B4E9D378B1A991463AB4755D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F0E45EC408040851FF434F76AF9B91DA;
+			remoteInfo = PureLayout;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		02560504EE01D25BE2B83E63C1039146 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03A936E89768DDD73AC3055A0283516E /* PureLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PureLayout.xcconfig; sourceTree = "<group>"; };
+		08B802F195F4EBE71428138B95956ABC /* TypeParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TypeParser.swift; path = Sources/TypeParser.swift; sourceTree = "<group>"; };
+		0AD2C2B38FBDF781DECDB2FFAC56B0EC /* AutoRegistration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AutoRegistration.swift; path = Sources/AutoRegistration.swift; sourceTree = "<group>"; };
+		1022D4BF3712EDAEAE21086BA66DF271 /* PureLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PureLayout.modulemap; sourceTree = "<group>"; };
 		14990E0A4808A8818081F0CE736067FF /* Pods-RestaurantsExplorerUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RestaurantsExplorerUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		1A37996BE2F823D3B3190797F0982D07 /* Pods_RestaurantsExplorerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RestaurantsExplorerTests.framework; path = "Pods-RestaurantsExplorerTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		158DE2BB988401BC6402019D89B81AC8 /* ServiceKey.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServiceKey.swift; path = Sources/ServiceKey.swift; sourceTree = "<group>"; };
+		178CECA4386F22D00CB28964A369880F /* SwinjectAutoregistration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwinjectAutoregistration.h; path = Sources/SwinjectAutoregistration.h; sourceTree = "<group>"; };
 		1C91BA07E5E2D27BBF449E6DB6E9BFF9 /* Pods-RestaurantsExplorerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RestaurantsExplorerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		1EDB2539137A6D124071C0B2FCCB7EFC /* Swinject-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Swinject-umbrella.h"; sourceTree = "<group>"; };
 		2161983B459416997CF6103B52104874 /* Pods-RestaurantsExplorerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RestaurantsExplorerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		225C1C363809553BDE7AFF5C5DD5B595 /* SpinLock.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpinLock.swift; path = Sources/SpinLock.swift; sourceTree = "<group>"; };
 		22EAFD2CDDC5618D2766B6C39A58A6EC /* Pods-RestaurantsExplorerUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RestaurantsExplorerUITests-frameworks.sh"; sourceTree = "<group>"; };
+		2AE5E2EDF934DD6EE4C9ECF6418F4039 /* NSArray+PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+PureLayout.h"; path = "PureLayout/PureLayout/NSArray+PureLayout.h"; sourceTree = "<group>"; };
+		2DA2B736EF332D3B309AA31E1930447E /* PureLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PureLayout.framework; path = PureLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		32BD74B319B9936B029A57E543F148A8 /* Pods-RestaurantsExplorer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RestaurantsExplorer.debug.xcconfig"; sourceTree = "<group>"; };
+		33EED10ADEF7D02A32EF881228FB38A5 /* Swinject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Swinject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		34A545E099123A1CA0AFA3A5E68B44C9 /* SwinjectAutoregistration.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwinjectAutoregistration.modulemap; sourceTree = "<group>"; };
+		35CCF3C2813A65BC0792881C8E4867CF /* PureLayout+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PureLayout+Internal.h"; path = "PureLayout/PureLayout/PureLayout+Internal.h"; sourceTree = "<group>"; };
+		360243D30E1F88FFB74CA6509AEB1ACD /* CheckResolved.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CheckResolved.swift; path = Sources/CheckResolved.swift; sourceTree = "<group>"; };
 		398A0A389F2113659466078EB7BBE195 /* Pods-RestaurantsExplorerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RestaurantsExplorerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		3A8C90D3B66D5148A5F6896E43683D95 /* Pods-RestaurantsExplorerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RestaurantsExplorerTests.release.xcconfig"; sourceTree = "<group>"; };
 		403405E0EE0EA228E20B24A1E76F0E7D /* Pods-RestaurantsExplorerTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RestaurantsExplorerTests-umbrella.h"; sourceTree = "<group>"; };
-		4858316F5D513AE2A543271D49BE106A /* Pods_RestaurantsExplorerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RestaurantsExplorerUITests.framework; path = "Pods-RestaurantsExplorerUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		43C8EA0BAA558C222F35F302609D5A8B /* SynchronizedResolver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SynchronizedResolver.swift; path = Sources/SynchronizedResolver.swift; sourceTree = "<group>"; };
+		459FB35C54F59AA9950A47814A5D1C17 /* FunctionType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FunctionType.swift; path = Sources/FunctionType.swift; sourceTree = "<group>"; };
+		45F82CD0B1A60008B85686EC7F7A5B20 /* Swinject-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Swinject-dummy.m"; sourceTree = "<group>"; };
+		4617F1376C5CFEA535AA57718F7EAA63 /* Swinject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Swinject.h; path = Sources/Swinject.h; sourceTree = "<group>"; };
+		4E46AA5C6934D1723F674C7962E4B6A6 /* NSLayoutConstraint+PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+PureLayout.h"; path = "PureLayout/PureLayout/NSLayoutConstraint+PureLayout.h"; sourceTree = "<group>"; };
 		566D16FBFA562A5E26BE8D96FA299D28 /* Pods-RestaurantsExplorer-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RestaurantsExplorer-acknowledgements.markdown"; sourceTree = "<group>"; };
-		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		56E22AF539D870609DCAD469EFCD5504 /* NSArray+PureLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+PureLayout.m"; path = "PureLayout/PureLayout/NSArray+PureLayout.m"; sourceTree = "<group>"; };
+		59594EDFBC51F75A0F7155218F8BE733 /* SwinjectAutoregistration-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwinjectAutoregistration-dummy.m"; sourceTree = "<group>"; };
+		5981D6DA6E3A8A2132AC1B5436CB18A8 /* Container.Arguments.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Container.Arguments.swift; path = Sources/Container.Arguments.swift; sourceTree = "<group>"; };
 		5A3E071B34D61F4C57449C672DCDA46B /* Pods-RestaurantsExplorerTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RestaurantsExplorerTests.modulemap"; sourceTree = "<group>"; };
+		5D500795855C6D88CAF33299F7AAEAC4 /* PureLayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PureLayout-umbrella.h"; sourceTree = "<group>"; };
+		604C10B9B4C67AFFAC67591B3F9B0EF9 /* Container.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Container.swift; path = Sources/Container.swift; sourceTree = "<group>"; };
 		6192BA548AE99F7D57DDE0457DF5A410 /* Pods-RestaurantsExplorerTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RestaurantsExplorerTests-frameworks.sh"; sourceTree = "<group>"; };
 		655979A0B4119734E076999502A77920 /* Pods-RestaurantsExplorerUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RestaurantsExplorerUITests-resources.sh"; sourceTree = "<group>"; };
+		66414F7274DB2373C6011A0DA365EF14 /* Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operators.swift; path = Sources/Operators.swift; sourceTree = "<group>"; };
+		672068B7D0F90BF93150B1A3E2F1C333 /* PureLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PureLayout-prefix.pch"; sourceTree = "<group>"; };
 		69883845041B6547E5EF10E36E4468D8 /* Pods-RestaurantsExplorer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RestaurantsExplorer-umbrella.h"; sourceTree = "<group>"; };
+		6DBB1F4176A98C3CA7908E6A39095414 /* Container.Logging.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Container.Logging.swift; path = Sources/Container.Logging.swift; sourceTree = "<group>"; };
 		70364D1940F97210EC6C13ACCF2D81F4 /* Pods-RestaurantsExplorerUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RestaurantsExplorerUITests-dummy.m"; sourceTree = "<group>"; };
 		73D5020007C8A89DC1F56B4031736239 /* Pods-RestaurantsExplorerUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RestaurantsExplorerUITests.modulemap"; sourceTree = "<group>"; };
+		75A167C06C4499A865AB981569837C24 /* Swinject.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Swinject.modulemap; sourceTree = "<group>"; };
 		7AA90FEE228450657893D52E8EE6B94B /* Pods-RestaurantsExplorer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RestaurantsExplorer.release.xcconfig"; sourceTree = "<group>"; };
+		7DA849289FD4C954CD4BDC020BD069A7 /* InstanceStorage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InstanceStorage.swift; path = Sources/InstanceStorage.swift; sourceTree = "<group>"; };
+		814FC3198DD9CCC5DDCF83B2C8084A62 /* PureLayoutDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PureLayoutDefines.h; path = PureLayout/PureLayout/PureLayoutDefines.h; sourceTree = "<group>"; };
+		8285BD51B621BA09E0BE5FFCB0B4A946 /* ServiceEntry.TypeForwarding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServiceEntry.TypeForwarding.swift; path = Sources/ServiceEntry.TypeForwarding.swift; sourceTree = "<group>"; };
+		83FEA04D72C6C6B48C4AFF85446A7BDA /* UnavailableItems.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UnavailableItems.swift; path = Sources/UnavailableItems.swift; sourceTree = "<group>"; };
+		84FC0479D50B4ED8313BF05F01B8C2E6 /* PureLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PureLayout-dummy.m"; sourceTree = "<group>"; };
 		864E845B5E04C20A4EE134C9BB4E3412 /* Pods-RestaurantsExplorerTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RestaurantsExplorerTests-dummy.m"; sourceTree = "<group>"; };
 		86C284C23EA7C9C264F6B30CD53BDF46 /* Pods-RestaurantsExplorerUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RestaurantsExplorerUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		8703417B9CBE6DFFFD848A0386837721 /* Pods-RestaurantsExplorer-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RestaurantsExplorer-resources.sh"; sourceTree = "<group>"; };
 		8B7C3587FCD35D2FF729F475D9C82F07 /* Pods-RestaurantsExplorer-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RestaurantsExplorer-frameworks.sh"; sourceTree = "<group>"; };
+		920990EE9BADB27CB68BCF2C9354A3E7 /* ALView+PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ALView+PureLayout.h"; path = "PureLayout/PureLayout/ALView+PureLayout.h"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		955251A37811B1B0EDCE2052D4398CBB /* Swinject.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Swinject.xcconfig; sourceTree = "<group>"; };
+		96AAB6860C16B6F43647E7625449FA1C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A07DAB560726C60376923BA8C878AB4A /* Pods-RestaurantsExplorer-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RestaurantsExplorer-acknowledgements.plist"; sourceTree = "<group>"; };
+		A4A61FAC8F554AF69AA81B79601F97CE /* Pods_RestaurantsExplorerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RestaurantsExplorerUITests.framework; path = "Pods-RestaurantsExplorerUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8B8A6BF0E7F692F9FBC44AAF3CDDDCB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC11DFD738293A6587DDC47D36161F6A /* Assembler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Assembler.swift; path = Sources/Assembler.swift; sourceTree = "<group>"; };
+		AC19C695B5080F0B7EEFAA60B815A905 /* SwinjectAutoregistration-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwinjectAutoregistration-prefix.pch"; sourceTree = "<group>"; };
+		ADE429EF88920718138F62025427361F /* ObjectScope.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ObjectScope.swift; path = Sources/ObjectScope.swift; sourceTree = "<group>"; };
 		AEBE6E25414627CB3D49551FE6E356D8 /* Pods-RestaurantsExplorer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RestaurantsExplorer-dummy.m"; sourceTree = "<group>"; };
 		AF6F61FEEC786599CD7E523BC2933323 /* Pods-RestaurantsExplorerUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RestaurantsExplorerUITests-umbrella.h"; sourceTree = "<group>"; };
+		B671D5F3A987342411B398E5DB996E66 /* Container.TypeForwarding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Container.TypeForwarding.swift; path = Sources/Container.TypeForwarding.swift; sourceTree = "<group>"; };
+		B87DE0AA40F0051BF2CF75C86F1EA02A /* Resolver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Resolver.swift; path = Sources/Resolver.swift; sourceTree = "<group>"; };
+		B9E33A766EAEC05B4C424DF380DC1575 /* GraphIdentifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GraphIdentifier.swift; path = Sources/GraphIdentifier.swift; sourceTree = "<group>"; };
 		BA33FA57C1E9749EF0BBF2CB0676B88F /* Pods-RestaurantsExplorerTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RestaurantsExplorerTests-resources.sh"; sourceTree = "<group>"; };
+		BF981D4F78D7BE06F78EF14C2B6675D8 /* NSLayoutConstraint+PureLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+PureLayout.m"; path = "PureLayout/PureLayout/NSLayoutConstraint+PureLayout.m"; sourceTree = "<group>"; };
+		C14E85D2E70974493DF957A99D6E3C43 /* SynchronizedResolver.Arguments.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SynchronizedResolver.Arguments.swift; path = Sources/SynchronizedResolver.Arguments.swift; sourceTree = "<group>"; };
+		C2188F5D2354A06BCCD2DD41BC2958FA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2DDB8864B162EFF928C94721E5B8421 /* DebugHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DebugHelper.swift; path = Sources/DebugHelper.swift; sourceTree = "<group>"; };
+		C358BB0AE121533C11AD1EDD7D666240 /* PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PureLayout.h; path = PureLayout/PureLayout/PureLayout.h; sourceTree = "<group>"; };
+		C67B782F250CC70101E97C026B4E7716 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C80AE5236D79B8B152F9F0B13202332D /* Behavior.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Behavior.swift; path = Sources/Behavior.swift; sourceTree = "<group>"; };
+		C9AC035526774F4CFFD63907291E170E /* Resolver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Resolver.swift; path = Sources/Resolver.swift; sourceTree = "<group>"; };
+		CA2E6D33A497F452798BA36F2EBA5CCC /* Pods_RestaurantsExplorerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RestaurantsExplorerTests.framework; path = "Pods-RestaurantsExplorerTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB55CF87B3345BD590B1B8E64ED08A7D /* SwinjectAutoregistration.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwinjectAutoregistration.xcconfig; sourceTree = "<group>"; };
+		CE2FE4F6FD3BA7FD076C88084CD17336 /* SwinjectAutoregistration-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwinjectAutoregistration-umbrella.h"; sourceTree = "<group>"; };
+		CE86323C6ACAA81B95AC23BBE732DB0F /* Pods_RestaurantsExplorer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RestaurantsExplorer.framework; path = "Pods-RestaurantsExplorer.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D159DB5DBE69625F97222179FB64FA09 /* Swinject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Swinject.framework; path = Swinject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3CE682A2A0251EA01A94C294FE3686A /* InstanceWrapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InstanceWrapper.swift; path = Sources/InstanceWrapper.swift; sourceTree = "<group>"; };
 		D4CDE5153090C616C766BFD299792454 /* Pods-RestaurantsExplorerTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RestaurantsExplorerTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		D532EEF32F310BA6E65AE651FCB1FAB7 /* _Resolver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = _Resolver.swift; path = Sources/_Resolver.swift; sourceTree = "<group>"; };
 		D870284358861E5DE5CC74498140D964 /* Pods-RestaurantsExplorerTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RestaurantsExplorerTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		DCB8C2FA39F072D80AC891185EA6390A /* Pods-RestaurantsExplorer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RestaurantsExplorer.modulemap"; sourceTree = "<group>"; };
-		E5F18F5FAF8D6FC136CAABD06D84AFAE /* Pods_RestaurantsExplorer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RestaurantsExplorer.framework; path = "Pods-RestaurantsExplorer.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCC9A95E0F61C8B7FB3A9ACA90182D34 /* SwinjectAutoregistration.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwinjectAutoregistration.framework; path = SwinjectAutoregistration.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E71682E68A488B29F7D4AB6C13AF1D8F /* Swinject-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Swinject-prefix.pch"; sourceTree = "<group>"; };
+		ED0AD92B7F45548D4B061E7E23632661 /* Type.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Type.swift; path = Sources/Type.swift; sourceTree = "<group>"; };
+		EEEC4757AC5539CCA307AFC0020DE148 /* ServiceEntry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServiceEntry.swift; path = Sources/ServiceEntry.swift; sourceTree = "<group>"; };
+		F021170EB335DCDFD772B5985AA6C560 /* ALView+PureLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ALView+PureLayout.m"; path = "PureLayout/PureLayout/ALView+PureLayout.m"; sourceTree = "<group>"; };
+		F1CC2035BE70C48B28D8DD5AA643C449 /* ResolutionError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResolutionError.swift; path = Sources/ResolutionError.swift; sourceTree = "<group>"; };
+		FA68102A338800FEE558D0FF4C1094A3 /* ObjectScope.Standard.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ObjectScope.Standard.swift; path = Sources/ObjectScope.Standard.swift; sourceTree = "<group>"; };
 		FAD3A2DD538DF1DB2E7E674B630DDD12 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAF08F22280D1AB0F6BB58624F3937FF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		FBD51A124B742FA2EFB7FC5F5B51A521 /* Assembly.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Assembly.swift; path = Sources/Assembly.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,11 +224,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		40E4D7CF5461D66EC83F8C37A1136C7D /* Frameworks */ = {
+		39507CA01B39394F95C69200AAF33244 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7BEC65A9A6C0380A62A668E215C4FD8A /* Foundation.framework in Frameworks */,
+				5BB4C62FA25FF8D90B6A19D79A16E48F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39CBD42A10F9AE0FC43CC696BE3D175C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFEFFF6BE5BB1318CAF580306E9DB7ED /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +245,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				425C614A9F94B41834D00D8D04EF460A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		660CB12D6D21C7B78DAC220935AA99A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C74F3401CAC469B1CDAEF30A64529852 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A73753B82FE945660C9799B18CBE072D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C59958FAA77C1F249510B369089B84F9 /* Foundation.framework in Frameworks */,
+				4672DFED6D3B22C1D59F164439554D55 /* Swinject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +304,43 @@
 			path = "Target Support Files/Pods-RestaurantsExplorer";
 			sourceTree = "<group>";
 		};
+		1B3C724A04768A156FC67BDD7E33EC3D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CE95C1CF5EDE0FAE4D63F16E633B74E2 /* PureLayout */,
+				4BFC7F05B2DBE86DD07A9C6C5C78229E /* Swinject */,
+				649950F80F66BC6ECF99A029934A173A /* SwinjectAutoregistration */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		2727F1ACE167BED9604850123895080E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				96AAB6860C16B6F43647E7625449FA1C /* Info.plist */,
+				34A545E099123A1CA0AFA3A5E68B44C9 /* SwinjectAutoregistration.modulemap */,
+				CB55CF87B3345BD590B1B8E64ED08A7D /* SwinjectAutoregistration.xcconfig */,
+				59594EDFBC51F75A0F7155218F8BE733 /* SwinjectAutoregistration-dummy.m */,
+				AC19C695B5080F0B7EEFAA60B815A905 /* SwinjectAutoregistration-prefix.pch */,
+				CE2FE4F6FD3BA7FD076C88084CD17336 /* SwinjectAutoregistration-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwinjectAutoregistration";
+			sourceTree = "<group>";
+		};
+		28356383668DBD46294674D310372C95 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE86323C6ACAA81B95AC23BBE732DB0F /* Pods_RestaurantsExplorer.framework */,
+				CA2E6D33A497F452798BA36F2EBA5CCC /* Pods_RestaurantsExplorerTests.framework */,
+				A4A61FAC8F554AF69AA81B79601F97CE /* Pods_RestaurantsExplorerUITests.framework */,
+				2DA2B736EF332D3B309AA31E1930447E /* PureLayout.framework */,
+				D159DB5DBE69625F97222179FB64FA09 /* Swinject.framework */,
+				DCC9A95E0F61C8B7FB3A9ACA90182D34 /* SwinjectAutoregistration.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		3BBDE38871151F33992A99E4DA9CA0A0 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -147,40 +351,101 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		49B2FA87612D5CE2D3051ECA85AE586D /* Products */ = {
+		4BFC7F05B2DBE86DD07A9C6C5C78229E /* Swinject */ = {
 			isa = PBXGroup;
 			children = (
-				E5F18F5FAF8D6FC136CAABD06D84AFAE /* Pods_RestaurantsExplorer.framework */,
-				1A37996BE2F823D3B3190797F0982D07 /* Pods_RestaurantsExplorerTests.framework */,
-				4858316F5D513AE2A543271D49BE106A /* Pods_RestaurantsExplorerUITests.framework */,
+				D532EEF32F310BA6E65AE651FCB1FAB7 /* _Resolver.swift */,
+				AC11DFD738293A6587DDC47D36161F6A /* Assembler.swift */,
+				FBD51A124B742FA2EFB7FC5F5B51A521 /* Assembly.swift */,
+				C80AE5236D79B8B152F9F0B13202332D /* Behavior.swift */,
+				604C10B9B4C67AFFAC67591B3F9B0EF9 /* Container.swift */,
+				5981D6DA6E3A8A2132AC1B5436CB18A8 /* Container.Arguments.swift */,
+				6DBB1F4176A98C3CA7908E6A39095414 /* Container.Logging.swift */,
+				B671D5F3A987342411B398E5DB996E66 /* Container.TypeForwarding.swift */,
+				C2DDB8864B162EFF928C94721E5B8421 /* DebugHelper.swift */,
+				459FB35C54F59AA9950A47814A5D1C17 /* FunctionType.swift */,
+				B9E33A766EAEC05B4C424DF380DC1575 /* GraphIdentifier.swift */,
+				7DA849289FD4C954CD4BDC020BD069A7 /* InstanceStorage.swift */,
+				D3CE682A2A0251EA01A94C294FE3686A /* InstanceWrapper.swift */,
+				ADE429EF88920718138F62025427361F /* ObjectScope.swift */,
+				FA68102A338800FEE558D0FF4C1094A3 /* ObjectScope.Standard.swift */,
+				C9AC035526774F4CFFD63907291E170E /* Resolver.swift */,
+				EEEC4757AC5539CCA307AFC0020DE148 /* ServiceEntry.swift */,
+				8285BD51B621BA09E0BE5FFCB0B4A946 /* ServiceEntry.TypeForwarding.swift */,
+				158DE2BB988401BC6402019D89B81AC8 /* ServiceKey.swift */,
+				225C1C363809553BDE7AFF5C5DD5B595 /* SpinLock.swift */,
+				4617F1376C5CFEA535AA57718F7EAA63 /* Swinject.h */,
+				43C8EA0BAA558C222F35F302609D5A8B /* SynchronizedResolver.swift */,
+				C14E85D2E70974493DF957A99D6E3C43 /* SynchronizedResolver.Arguments.swift */,
+				83FEA04D72C6C6B48C4AFF85446A7BDA /* UnavailableItems.swift */,
+				56DBF3A82C6CAB6C3BBE40BB42A727B9 /* Support Files */,
 			);
-			name = Products;
+			name = Swinject;
+			path = Swinject;
 			sourceTree = "<group>";
 		};
-		5E0D919E635D23B70123790B8308F8EF /* iOS */ = {
+		4FD1C9C658F5B0CBF27C80038C45D149 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */,
+				C2188F5D2354A06BCCD2DD41BC2958FA /* Info.plist */,
+				1022D4BF3712EDAEAE21086BA66DF271 /* PureLayout.modulemap */,
+				03A936E89768DDD73AC3055A0283516E /* PureLayout.xcconfig */,
+				84FC0479D50B4ED8313BF05F01B8C2E6 /* PureLayout-dummy.m */,
+				672068B7D0F90BF93150B1A3E2F1C333 /* PureLayout-prefix.pch */,
+				5D500795855C6D88CAF33299F7AAEAC4 /* PureLayout-umbrella.h */,
 			);
-			name = iOS;
+			name = "Support Files";
+			path = "../Target Support Files/PureLayout";
+			sourceTree = "<group>";
+		};
+		56DBF3A82C6CAB6C3BBE40BB42A727B9 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C67B782F250CC70101E97C026B4E7716 /* Info.plist */,
+				75A167C06C4499A865AB981569837C24 /* Swinject.modulemap */,
+				955251A37811B1B0EDCE2052D4398CBB /* Swinject.xcconfig */,
+				45F82CD0B1A60008B85686EC7F7A5B20 /* Swinject-dummy.m */,
+				E71682E68A488B29F7D4AB6C13AF1D8F /* Swinject-prefix.pch */,
+				1EDB2539137A6D124071C0B2FCCB7EFC /* Swinject-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Swinject";
+			sourceTree = "<group>";
+		};
+		649950F80F66BC6ECF99A029934A173A /* SwinjectAutoregistration */ = {
+			isa = PBXGroup;
+			children = (
+				0AD2C2B38FBDF781DECDB2FFAC56B0EC /* AutoRegistration.swift */,
+				360243D30E1F88FFB74CA6509AEB1ACD /* CheckResolved.swift */,
+				66414F7274DB2373C6011A0DA365EF14 /* Operators.swift */,
+				F1CC2035BE70C48B28D8DD5AA643C449 /* ResolutionError.swift */,
+				B87DE0AA40F0051BF2CF75C86F1EA02A /* Resolver.swift */,
+				178CECA4386F22D00CB28964A369880F /* SwinjectAutoregistration.h */,
+				ED0AD92B7F45548D4B061E7E23632661 /* Type.swift */,
+				08B802F195F4EBE71428138B95956ABC /* TypeParser.swift */,
+				2727F1ACE167BED9604850123895080E /* Support Files */,
+			);
+			name = SwinjectAutoregistration;
+			path = SwinjectAutoregistration;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				49B2FA87612D5CE2D3051ECA85AE586D /* Products */,
+				DADE99249BB4F3D279575DCDD6BF00D3 /* Frameworks */,
+				1B3C724A04768A156FC67BDD7E33EC3D /* Pods */,
+				28356383668DBD46294674D310372C95 /* Products */,
 				3BBDE38871151F33992A99E4DA9CA0A0 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+		BB3D880A8FE02A1E2C87DCC4D16EFF0A /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				5E0D919E635D23B70123790B8308F8EF /* iOS */,
+				FAF08F22280D1AB0F6BB58624F3937FF /* Foundation.framework */,
 			);
-			name = Frameworks;
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		C02C4D8E5E6980227D6B451752C25132 /* Pods-RestaurantsExplorerTests */ = {
@@ -201,9 +466,59 @@
 			path = "Target Support Files/Pods-RestaurantsExplorerTests";
 			sourceTree = "<group>";
 		};
+		CE95C1CF5EDE0FAE4D63F16E633B74E2 /* PureLayout */ = {
+			isa = PBXGroup;
+			children = (
+				920990EE9BADB27CB68BCF2C9354A3E7 /* ALView+PureLayout.h */,
+				F021170EB335DCDFD772B5985AA6C560 /* ALView+PureLayout.m */,
+				2AE5E2EDF934DD6EE4C9ECF6418F4039 /* NSArray+PureLayout.h */,
+				56E22AF539D870609DCAD469EFCD5504 /* NSArray+PureLayout.m */,
+				4E46AA5C6934D1723F674C7962E4B6A6 /* NSLayoutConstraint+PureLayout.h */,
+				BF981D4F78D7BE06F78EF14C2B6675D8 /* NSLayoutConstraint+PureLayout.m */,
+				C358BB0AE121533C11AD1EDD7D666240 /* PureLayout.h */,
+				35CCF3C2813A65BC0792881C8E4867CF /* PureLayout+Internal.h */,
+				814FC3198DD9CCC5DDCF83B2C8084A62 /* PureLayoutDefines.h */,
+				4FD1C9C658F5B0CBF27C80038C45D149 /* Support Files */,
+			);
+			name = PureLayout;
+			path = PureLayout;
+			sourceTree = "<group>";
+		};
+		DADE99249BB4F3D279575DCDD6BF00D3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				33EED10ADEF7D02A32EF881228FB38A5 /* Swinject.framework */,
+				BB3D880A8FE02A1E2C87DCC4D16EFF0A /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		06463DC51401592B3A6B24115793A6B2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7A18E35B5027D3BEFC188E5FD960380 /* ALView+PureLayout.h in Headers */,
+				E19334B65547EC9518A981A571D835A9 /* NSArray+PureLayout.h in Headers */,
+				A054E1BDD6BF052DBB317384FCB0BD99 /* NSLayoutConstraint+PureLayout.h in Headers */,
+				B7A495B374FA1FD503A1E3E354C6332C /* PureLayout+Internal.h in Headers */,
+				7E8BE6D727212233F2CFD7C5CCC1542D /* PureLayout-umbrella.h in Headers */,
+				D9418D692C04FB8819611EA8FFF0036E /* PureLayout.h in Headers */,
+				AE8B97A3F3D4FB1701DEDB5214048612 /* PureLayoutDefines.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		227C869EB78A59BD73DA44F97E8AFC6E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12FBA83948B5DE41578A4429C9A69C94 /* Swinject-umbrella.h in Headers */,
+				F8F04E95D6E8D37B7FE0C0770427C28B /* Swinject.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		277F2EFC3C4ED99A80AE6D585F1858A8 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -212,11 +527,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		59A740B6D06DEF5BE56DFEE6777610C7 /* Headers */ = {
+		AB0E6268750E5E7D58176204F39E33CE /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				12F67F3895D4C1147E4D900D1B9D07F2 /* Pods-RestaurantsExplorer-umbrella.h in Headers */,
+				29031705411AF02D9EA286E00B27F091 /* SwinjectAutoregistration-umbrella.h in Headers */,
+				5F8662817A531B981AD2ED1C67343175 /* SwinjectAutoregistration.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,9 +544,38 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E94393D039E20C95D85F6F82F55AC772 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B29CE6C41E975959B3FC504DA5A64F8 /* Pods-RestaurantsExplorer-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		1088E7C6220A357CB784E42F8745C572 /* Pods-RestaurantsExplorer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6E86E5AE410E3170188699CF7A665B1 /* Build configuration list for PBXNativeTarget "Pods-RestaurantsExplorer" */;
+			buildPhases = (
+				E94393D039E20C95D85F6F82F55AC772 /* Headers */,
+				B2A21DAE6A27E86FA19E1B25873BC99C /* Sources */,
+				660CB12D6D21C7B78DAC220935AA99A1 /* Frameworks */,
+				D8C249B4C0BBDA8DCB57DFACFBC54414 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4D04A4C12CBC5BEC1993484B9C9FC96B /* PBXTargetDependency */,
+				4F883013867D0A4DC28E6B42974747A1 /* PBXTargetDependency */,
+				316A446626B7CEA7C5A96F4C62D41865 /* PBXTargetDependency */,
+			);
+			name = "Pods-RestaurantsExplorer";
+			productName = "Pods-RestaurantsExplorer";
+			productReference = CE86323C6ACAA81B95AC23BBE732DB0F /* Pods_RestaurantsExplorer.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		300D0BEE93113615CF46671B28E576DF /* Pods-RestaurantsExplorerUITests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3AE4BE9D9DDF66C6A914A62C30BE3121 /* Build configuration list for PBXNativeTarget "Pods-RestaurantsExplorerUITests" */;
@@ -247,7 +592,7 @@
 			);
 			name = "Pods-RestaurantsExplorerUITests";
 			productName = "Pods-RestaurantsExplorerUITests";
-			productReference = 4858316F5D513AE2A543271D49BE106A /* Pods_RestaurantsExplorerUITests.framework */;
+			productReference = A4A61FAC8F554AF69AA81B79601F97CE /* Pods_RestaurantsExplorerUITests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		5341417E593AB1E4BFCF7CD45322E120 /* Pods-RestaurantsExplorerTests */ = {
@@ -266,25 +611,62 @@
 			);
 			name = "Pods-RestaurantsExplorerTests";
 			productName = "Pods-RestaurantsExplorerTests";
-			productReference = 1A37996BE2F823D3B3190797F0982D07 /* Pods_RestaurantsExplorerTests.framework */;
+			productReference = CA2E6D33A497F452798BA36F2EBA5CCC /* Pods_RestaurantsExplorerTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		CD3FB5D99B2BD51ECF87EFC97439768A /* Pods-RestaurantsExplorer */ = {
+		C9F634D806FFE5B06392B9861D670ABD /* Swinject */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 480E5137D71A5ED24B1B5286D2F2F8B4 /* Build configuration list for PBXNativeTarget "Pods-RestaurantsExplorer" */;
+			buildConfigurationList = 776D1D0E0607F9FB1B5175C1384BA426 /* Build configuration list for PBXNativeTarget "Swinject" */;
 			buildPhases = (
-				59A740B6D06DEF5BE56DFEE6777610C7 /* Headers */,
-				76D25D24DA8202D0F341B74E576D6436 /* Sources */,
-				40E4D7CF5461D66EC83F8C37A1136C7D /* Frameworks */,
-				EE35D1D3FA6B759D8A4C844571036BAB /* Resources */,
+				227C869EB78A59BD73DA44F97E8AFC6E /* Headers */,
+				EF5BF4308258141AE6846B95A446F0E4 /* Sources */,
+				39507CA01B39394F95C69200AAF33244 /* Frameworks */,
+				6182A38C139AD9BF29AC40C40B059D0D /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Pods-RestaurantsExplorer";
-			productName = "Pods-RestaurantsExplorer";
-			productReference = E5F18F5FAF8D6FC136CAABD06D84AFAE /* Pods_RestaurantsExplorer.framework */;
+			name = Swinject;
+			productName = Swinject;
+			productReference = D159DB5DBE69625F97222179FB64FA09 /* Swinject.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F0E45EC408040851FF434F76AF9B91DA /* PureLayout */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6311978BA2DE1FC2FADAA423565E9866 /* Build configuration list for PBXNativeTarget "PureLayout" */;
+			buildPhases = (
+				06463DC51401592B3A6B24115793A6B2 /* Headers */,
+				D1ED04359157D5B3C54C6DF906A26D6B /* Sources */,
+				39CBD42A10F9AE0FC43CC696BE3D175C /* Frameworks */,
+				3D0678DF5509EFEBEA47CBC6811BD726 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PureLayout;
+			productName = PureLayout;
+			productReference = 2DA2B736EF332D3B309AA31E1930447E /* PureLayout.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FE6A176DD8A744BDC2C8ED08C4E90549 /* SwinjectAutoregistration */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4CA294560831579ED20EC14CA3343F8 /* Build configuration list for PBXNativeTarget "SwinjectAutoregistration" */;
+			buildPhases = (
+				AB0E6268750E5E7D58176204F39E33CE /* Headers */,
+				22E3DB49240401DC048F7638E3E0C783 /* Sources */,
+				A73753B82FE945660C9799B18CBE072D /* Frameworks */,
+				3FCE55312DD6BF91C8A16FF0E9AA7EA2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				64C750BD941ACABDAF7DB37106B245F7 /* PBXTargetDependency */,
+			);
+			name = SwinjectAutoregistration;
+			productName = SwinjectAutoregistration;
+			productReference = DCC9A95E0F61C8B7FB3A9ACA90182D34 /* SwinjectAutoregistration.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -304,19 +686,43 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 49B2FA87612D5CE2D3051ECA85AE586D /* Products */;
+			productRefGroup = 28356383668DBD46294674D310372C95 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CD3FB5D99B2BD51ECF87EFC97439768A /* Pods-RestaurantsExplorer */,
+				1088E7C6220A357CB784E42F8745C572 /* Pods-RestaurantsExplorer */,
 				5341417E593AB1E4BFCF7CD45322E120 /* Pods-RestaurantsExplorerTests */,
 				300D0BEE93113615CF46671B28E576DF /* Pods-RestaurantsExplorerUITests */,
+				F0E45EC408040851FF434F76AF9B91DA /* PureLayout */,
+				C9F634D806FFE5B06392B9861D670ABD /* Swinject */,
+				FE6A176DD8A744BDC2C8ED08C4E90549 /* SwinjectAutoregistration */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		052B28246E63E39154D2264E9F49995C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D0678DF5509EFEBEA47CBC6811BD726 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FCE55312DD6BF91C8A16FF0E9AA7EA2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6182A38C139AD9BF29AC40C40B059D0D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -330,7 +736,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EE35D1D3FA6B759D8A4C844571036BAB /* Resources */ = {
+		D8C249B4C0BBDA8DCB57DFACFBC54414 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -340,6 +746,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		22E3DB49240401DC048F7638E3E0C783 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01F535E2D6457F591D825B282D95DA6A /* AutoRegistration.swift in Sources */,
+				8E180FCF19C88A5C1B4F2917C64F6B67 /* CheckResolved.swift in Sources */,
+				C4626C25816D368638157528EED58FB9 /* Operators.swift in Sources */,
+				CA9944D5EC790B4E900968A8D7C9A3F1 /* ResolutionError.swift in Sources */,
+				745968F2290DEE39F7E7761AF3A95F1C /* Resolver.swift in Sources */,
+				A67DD2266D2B1E339B4087CB151C05CF /* SwinjectAutoregistration-dummy.m in Sources */,
+				48C20013A37E944B8670A632AB06AB77 /* Type.swift in Sources */,
+				289762474842576C8423919E987B7F20 /* TypeParser.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		42106A39BEC3D14608EF2B3DB3A847FE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -348,11 +769,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		76D25D24DA8202D0F341B74E576D6436 /* Sources */ = {
+		B2A21DAE6A27E86FA19E1B25873BC99C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97B6FAFA68E3B64E7C43F1743BFF037E /* Pods-RestaurantsExplorer-dummy.m in Sources */,
+				4849A681EC28B15F76584610C2C2F172 /* Pods-RestaurantsExplorer-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1ED04359157D5B3C54C6DF906A26D6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0231A915BD7E8034C04ADC4DDBE6730B /* ALView+PureLayout.m in Sources */,
+				41B0F4519F28BD6D508DE20E8544513B /* NSArray+PureLayout.m in Sources */,
+				4E4C600108D46DB2E1F74DFD1C8839A3 /* NSLayoutConstraint+PureLayout.m in Sources */,
+				FFFACE3E7D77F3D0EB5E0ACBFB8F88AB /* PureLayout-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,25 +796,115 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EF5BF4308258141AE6846B95A446F0E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				872F49EC61535290132390D1941A7171 /* _Resolver.swift in Sources */,
+				FCA1783B48E39F64FE97788AD51A663B /* Assembler.swift in Sources */,
+				2E2D06BF29FC70BD801475E2A85FB643 /* Assembly.swift in Sources */,
+				C90761304E874995CB30885447586A5B /* Behavior.swift in Sources */,
+				8685F0067D3CF147DE1E65699C27C334 /* Container.Arguments.swift in Sources */,
+				BEE8D730E539DDC53CE34F29E6B4918A /* Container.Logging.swift in Sources */,
+				C8CFC7C0C7EBBA29905057C81904A49E /* Container.swift in Sources */,
+				19F8A841931C8C938650EA5EEC793F9A /* Container.TypeForwarding.swift in Sources */,
+				46AB69F8E6255EAC2D15963981FD7D8F /* DebugHelper.swift in Sources */,
+				CE3A9647198FF0F996B4C27EEADFAA40 /* FunctionType.swift in Sources */,
+				6D8ECA98793E91574BABFACFC3587705 /* GraphIdentifier.swift in Sources */,
+				F34F56C719FED127A0EC9F31CEBA78C3 /* InstanceStorage.swift in Sources */,
+				7C6E7F7549EEA042EDD15BB2214B5DD8 /* InstanceWrapper.swift in Sources */,
+				DD88258DD3CE8529AABEF790DAEFB245 /* ObjectScope.Standard.swift in Sources */,
+				0F3B25429E74C23BDA071C18A16A6851 /* ObjectScope.swift in Sources */,
+				2C9792582787241D279772E67488BCE6 /* Resolver.swift in Sources */,
+				1EC128E3DD2D4DE44CE6E96254C13F5B /* ServiceEntry.swift in Sources */,
+				ED2A39EDA7961EAA813790EE7FA287A9 /* ServiceEntry.TypeForwarding.swift in Sources */,
+				3B440C93E67C63B3250904209E4607B4 /* ServiceKey.swift in Sources */,
+				4008D70D7C8DDA9257D20F7825657F25 /* SpinLock.swift in Sources */,
+				BBCF83FB82CEBCA7F1F00604739AFEFE /* Swinject-dummy.m in Sources */,
+				E698616B8929AF3D7E3FEACF8CD5CE78 /* SynchronizedResolver.Arguments.swift in Sources */,
+				5295D75E600F32E5E9C806179E1C1EAC /* SynchronizedResolver.swift in Sources */,
+				C96CCCC558ABEC7D6B274CD800738B36 /* UnavailableItems.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		316A446626B7CEA7C5A96F4C62D41865 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwinjectAutoregistration;
+			target = FE6A176DD8A744BDC2C8ED08C4E90549 /* SwinjectAutoregistration */;
+			targetProxy = BE9075FDC6627F1092AF239DF2604148 /* PBXContainerItemProxy */;
+		};
+		4D04A4C12CBC5BEC1993484B9C9FC96B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PureLayout;
+			target = F0E45EC408040851FF434F76AF9B91DA /* PureLayout */;
+			targetProxy = DF98DB8B4E9D378B1A991463AB4755D7 /* PBXContainerItemProxy */;
+		};
+		4F883013867D0A4DC28E6B42974747A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Swinject;
+			target = C9F634D806FFE5B06392B9861D670ABD /* Swinject */;
+			targetProxy = D131325FF3ACBA748C2D476C1054344E /* PBXContainerItemProxy */;
+		};
+		64C750BD941ACABDAF7DB37106B245F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Swinject;
+			target = C9F634D806FFE5B06392B9861D670ABD /* Swinject */;
+			targetProxy = C97DD5C77BFB4B0653287310973A8E47 /* PBXContainerItemProxy */;
+		};
 		79CF770C6E54622254F98A083C367A71 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-RestaurantsExplorer";
-			target = CD3FB5D99B2BD51ECF87EFC97439768A /* Pods-RestaurantsExplorer */;
+			target = 1088E7C6220A357CB784E42F8745C572 /* Pods-RestaurantsExplorer */;
 			targetProxy = D50DEDCC6836705C4BDBAFF499DC3AEF /* PBXContainerItemProxy */;
 		};
 		AE16083F5FDE0741C574469AAAE951AB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-RestaurantsExplorer";
-			target = CD3FB5D99B2BD51ECF87EFC97439768A /* Pods-RestaurantsExplorer */;
+			target = 1088E7C6220A357CB784E42F8745C572 /* Pods-RestaurantsExplorer */;
 			targetProxy = 2AF6A4D14CD1A56858225C42E86A3DDC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		57EEBDC852262BE26CA62F05B0B9EB2E /* Release */ = {
+		094DA13703561EF8924EDA3A2DD3D67F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03A936E89768DDD73AC3055A0283516E /* PureLayout.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PureLayout/PureLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PureLayout/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/PureLayout/PureLayout.modulemap";
+				PRODUCT_MODULE_NAME = PureLayout;
+				PRODUCT_NAME = PureLayout;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1ECDD605DC1221248B13A63D379B5469 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7AA90FEE228450657893D52E8EE6B94B /* Pods-RestaurantsExplorer.release.xcconfig */;
 			buildSettings = {
@@ -414,6 +936,118 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		348417B164AB0719DEA263F5DF542AB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 955251A37811B1B0EDCE2052D4398CBB /* Swinject.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Swinject/Swinject-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Swinject/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Swinject/Swinject.modulemap";
+				PRODUCT_MODULE_NAME = Swinject;
+				PRODUCT_NAME = Swinject;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5DF124532D2D074CB729A0077AB42598 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB55CF87B3345BD590B1B8E64ED08A7D /* SwinjectAutoregistration.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwinjectAutoregistration/SwinjectAutoregistration-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwinjectAutoregistration/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwinjectAutoregistration/SwinjectAutoregistration.modulemap";
+				PRODUCT_MODULE_NAME = SwinjectAutoregistration;
+				PRODUCT_NAME = SwinjectAutoregistration;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7B4EC6454B76902B288E0F1DFB013059 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03A936E89768DDD73AC3055A0283516E /* PureLayout.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PureLayout/PureLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PureLayout/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/PureLayout/PureLayout.modulemap";
+				PRODUCT_MODULE_NAME = PureLayout;
+				PRODUCT_NAME = PureLayout;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -583,44 +1217,6 @@
 			};
 			name = Release;
 		};
-		A6CD962EB8282644E560CDBDF7EF3474 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 32BD74B319B9936B029A57E543F148A8 /* Pods-RestaurantsExplorer.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-RestaurantsExplorer/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-RestaurantsExplorer/Pods-RestaurantsExplorer.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		B188115CCC52556126643C5B531E022F /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3A8C90D3B66D5148A5F6896E43683D95 /* Pods-RestaurantsExplorerTests.release.xcconfig */;
@@ -653,6 +1249,44 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B7556544C212B687FC34BF68970A389D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB55CF87B3345BD590B1B8E64ED08A7D /* SwinjectAutoregistration.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwinjectAutoregistration/SwinjectAutoregistration-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwinjectAutoregistration/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwinjectAutoregistration/SwinjectAutoregistration.modulemap";
+				PRODUCT_MODULE_NAME = SwinjectAutoregistration;
+				PRODUCT_NAME = SwinjectAutoregistration;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -698,6 +1332,42 @@
 			};
 			name = Debug;
 		};
+		C6F9A93B5008E84E1F9A44CDE3EA5DCA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 955251A37811B1B0EDCE2052D4398CBB /* Swinject.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Swinject/Swinject-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Swinject/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Swinject/Swinject.modulemap";
+				PRODUCT_MODULE_NAME = Swinject;
+				PRODUCT_NAME = Swinject;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		E00398EA0F2F41672B7DE1D7CDA243A8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 398A0A389F2113659466078EB7BBE195 /* Pods-RestaurantsExplorerTests.debug.xcconfig */;
@@ -736,6 +1406,46 @@
 			};
 			name = Debug;
 		};
+		E9123E347E51C7869BA190BED39ABE24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32BD74B319B9936B029A57E543F148A8 /* Pods-RestaurantsExplorer.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RestaurantsExplorer/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RestaurantsExplorer/Pods-RestaurantsExplorer.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -757,11 +1467,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		480E5137D71A5ED24B1B5286D2F2F8B4 /* Build configuration list for PBXNativeTarget "Pods-RestaurantsExplorer" */ = {
+		6311978BA2DE1FC2FADAA423565E9866 /* Build configuration list for PBXNativeTarget "PureLayout" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A6CD962EB8282644E560CDBDF7EF3474 /* Debug */,
-				57EEBDC852262BE26CA62F05B0B9EB2E /* Release */,
+				094DA13703561EF8924EDA3A2DD3D67F /* Debug */,
+				7B4EC6454B76902B288E0F1DFB013059 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		776D1D0E0607F9FB1B5175C1384BA426 /* Build configuration list for PBXNativeTarget "Swinject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6F9A93B5008E84E1F9A44CDE3EA5DCA /* Debug */,
+				348417B164AB0719DEA263F5DF542AB6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -771,6 +1490,24 @@
 			buildConfigurations = (
 				E00398EA0F2F41672B7DE1D7CDA243A8 /* Debug */,
 				B188115CCC52556126643C5B531E022F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D6E86E5AE410E3170188699CF7A665B1 /* Build configuration list for PBXNativeTarget "Pods-RestaurantsExplorer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9123E347E51C7869BA190BED39ABE24 /* Debug */,
+				1ECDD605DC1221248B13A63D379B5469 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4CA294560831579ED20EC14CA3343F8 /* Build configuration list for PBXNativeTarget "SwinjectAutoregistration" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DF124532D2D074CB729A0077AB42598 /* Debug */,
+				B7556544C212B687FC34BF68970A389D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

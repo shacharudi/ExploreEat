@@ -3,10 +3,14 @@
 
 def installPods
   pod 'Swinject'
+  pod 'SwinjectAutoregistration'
+  pod 'PureLayout'
 end
 
 target 'RestaurantsExplorer' do
   use_frameworks!
+
+  installPods
 
   target 'RestaurantsExplorerTests' do
     inherit! :search_paths
