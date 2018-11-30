@@ -22,6 +22,7 @@ class AppBuilder {
         self.registerViewControllers()
         self.registerViewModels()
         self.registerServices()
+        self.registerInteractors()
     }
     
     public func rootViewController() -> UIViewController {
@@ -42,6 +43,10 @@ class AppBuilder {
     }
     
     private func registerServices() {
-        self.container.autoregister(SearchLocationsService.self, initializer: SearchLocationsService.init)
+        self.container.autoregister(SearchLocationsServiceType.self, initializer: SearchLocationsService.init)
+    }
+    
+    private func registerInteractors() {
+        self.container.autoregister(RequestDispatcherType.self, initializer: RequestDispatcher.init)
     }
 }

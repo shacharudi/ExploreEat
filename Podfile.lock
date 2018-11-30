@@ -1,37 +1,45 @@
 PODS:
+  - Alamofire (4.8.0)
   - HydraAsync (1.2.1)
   - PureLayout (3.1.4)
   - SwiftIcons (2.2.0)
   - SwiftLint (0.29.0)
+  - SwiftyJSON (4.2.0)
   - Swinject (2.5.0)
   - SwinjectAutoregistration (2.5.1):
     - Swinject (~> 2.5)
 
 DEPENDENCIES:
+  - Alamofire
   - HydraAsync
   - PureLayout
   - SwiftIcons
   - SwiftLint
+  - SwiftyJSON
   - Swinject
   - SwinjectAutoregistration
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Alamofire
     - HydraAsync
     - PureLayout
     - SwiftIcons
     - SwiftLint
+    - SwiftyJSON
     - Swinject
     - SwinjectAutoregistration
 
 SPEC CHECKSUMS:
+  Alamofire: 3ec537f71edc9804815215393ae2b1a8ea33a844
   HydraAsync: 8f2ab62d57e140b4ca587ae0f66e1eb04e8e6965
   PureLayout: f08c01b8dec00bb14a1fefa3de4c7d9c265df85e
   SwiftIcons: e7eb9bf2b475d6bdd8b37c5bdedc6d120aab0829
   SwiftLint: d4e7443d93e2bbe868dc302e6c7ac30b469d6a14
+  SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
   Swinject: 82cdb851f63f91bba974e3eca1d69780f2f7677e
   SwinjectAutoregistration: f72bf894cbd2ee4a9153e00fa5208e93fb44d283
 
-PODFILE CHECKSUM: 59b96c0f09a78fc1b100a35202f4f33bcb5bbc16
+PODFILE CHECKSUM: 67c75fa3994c8918d32d4b3707e25bfee1a71ba0
 
 COCOAPODS: 1.5.3

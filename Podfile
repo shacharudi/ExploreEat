@@ -8,6 +8,8 @@ def installPods
   pod 'SwiftLint'
   pod 'SwiftIcons'
   pod 'HydraAsync'
+  pod 'Alamofire'
+  pod 'SwiftyJSON'
 end
 
 Swift4Targets = [

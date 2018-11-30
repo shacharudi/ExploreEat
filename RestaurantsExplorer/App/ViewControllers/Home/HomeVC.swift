@@ -61,6 +61,8 @@ class HomeVC: UIViewController {
 
 extension HomeVC: UISearchResultsUpdating {
     func updateSearchResults(for searchController: UISearchController) {
-        
+        guard let searchTerm = searchController.searchBar.text else {
+            return
+        }  
     }
 }

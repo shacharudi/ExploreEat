@@ -15,10 +15,16 @@ protocol HomeVCViewModelType {
 }
 
 class HomeVCViewModel: HomeVCViewModelType {
-    
+
     public var viewTitle: String = Texts.homeVCViewTitle
+
+    private let searchLocationsService: SearchLocationsServiceType
     
-    init() {
-        
+    init(searchLocationsService: SearchLocationsServiceType) {
+        self.searchLocationsService = searchLocationsService
+        self.searchLocationsService.searchLocation(term: "Tel")
+            .then { searchResults in
+                print(searchResults.cities)
+        }
     }
 }
