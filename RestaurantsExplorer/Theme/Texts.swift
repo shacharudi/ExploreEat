@@ -13,4 +13,5 @@ enum Texts {
     static let homeVCSearchTitle: String = "Search"
     static let searchCityNoPreviousSearches = "No Previous Searches"
     static let searchCityHeaderTitle: String = "Previous Searches"
+    static let mapViewTitle: String = "Restaurant Map"
 }

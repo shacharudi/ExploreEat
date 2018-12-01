@@ -11,7 +11,7 @@ import UIKit
 import Kingfisher
 
 enum DefaultImage {
-    static let noCountryFlag = UIImage.from(color: Colors.navigationBar)
+    static let noCountryFlag = UIImage.from(color: Colors.primaryColor)
 }
 
 class Images {

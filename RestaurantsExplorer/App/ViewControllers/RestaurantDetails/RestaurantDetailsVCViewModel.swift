@@ -47,6 +47,7 @@ class RestaurantDetailsVCViewModel: RestaurantDetailsVCViewModelType {
     }
     
     private func resturantDetailsReturned(restaurnt: Restaurnt) {
+        self.loadingState.value = .hasResults
         self.delegate?.setRestaurntDetails(restaurnt: restaurnt)
     }
 }

@@ -52,7 +52,7 @@ class SearchRestaurntsService: SearchRestaurntsServiceType {
             .create(parseBlock: { (parsed: JSON) -> RestaurntsSearchResultsList in
                 var restaurnts = [Restaurnt]()
                 parsed[RestaurntsSearchResultsList.kRestaurntsKey].array?.forEach { restaurntJSON in
-                    restaurnts.append(Restaurnt(json: restaurntJSON))
+                    restaurnts.append(Restaurnt(restaurant: restaurntJSON[Restaurnt.restaurantKey]))
                 }
                 return RestaurntsSearchResultsList.init(restaurnts: restaurnts)
             })
@@ -62,8 +62,7 @@ class SearchRestaurntsService: SearchRestaurntsServiceType {
     private func createGetRestaurntDetailsParser() -> RequestResponseParser<Restaurnt> {
         let parser = RequestResponseParser<Restaurnt>
             .create(parseBlock: { (parsed: JSON) -> Restaurnt in
-                print(parsed)
-                return Restaurnt()
+                return Restaurnt(restaurant: parsed)
             })
         return parser
     }

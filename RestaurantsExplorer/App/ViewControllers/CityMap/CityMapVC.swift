@@ -40,6 +40,8 @@ class CityMapVC: UIViewController, CityMapVCViewModelDelegate, LocationsMapDeleg
     
     private func setupView() {
         self.view.backgroundColor = Colors.viewControllerBackground
+        self.title = Texts.mapViewTitle
+        
         self.setupCityDetails()
         self.setupLoadingView()
         self.setupCityMap()

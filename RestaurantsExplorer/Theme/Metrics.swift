@@ -21,4 +21,8 @@ enum Metrics {
         static let flagSize = CGSize(width: 30, height: 30)
         static let flagCornetRadius: CGFloat = 4
     }
+    
+    enum RestaurntDetails {
+        static let imageHeight: CGFloat = 220
+    }
 }
