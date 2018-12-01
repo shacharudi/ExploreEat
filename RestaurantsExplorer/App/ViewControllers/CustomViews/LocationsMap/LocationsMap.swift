@@ -12,12 +12,27 @@ import MapKit
 
 class LocationsMap: UIView {
     
+    private var mapView = MKMapView()
+    
     init() {
         super.init(frame: .zero)
-        self.backgroundColor = .blue
+        self.setupView()
     }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    // MARK: - Setup View UI
+    
+    private func setupView() {
+        self.setupMap()
+    }
+    
+    // MARK: - LocationsMap
+    
+    private func setupMap() {
+        self.addSubview(self.mapView)
+        self.mapView.autoPinEdgesToSuperviewEdges()
     }
 }

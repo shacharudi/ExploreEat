@@ -90,4 +90,8 @@ class CityMapVC: UIViewController, CityMapVCViewModelDelegate {
     func updateViewDetails(city: City) {
         self.cityDetailsView.setViewCity(city: city)
     }
+    
+    func setMapRestaurnts(restaurntsSearchResults: RestaurntsSearchResultsList) {
+        
+    }
 }

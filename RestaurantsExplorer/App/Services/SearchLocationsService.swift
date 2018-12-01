@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import MapKit
 import Hydra
 import SwiftyJSON
 

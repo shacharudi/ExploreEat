@@ -13,6 +13,7 @@ import RxSwift
 
 protocol CityMapVCViewModelDelegate: class {
     func updateViewDetails(city: City)
+    func setMapRestaurnts(restaurntsSearchResults: RestaurntsSearchResultsList)
 }
 
 protocol CityMapVCViewModelType {
@@ -28,14 +29,17 @@ class CityMapVCViewModel: CityMapVCViewModelType {
     
     private let cityId: String
     private let database: DatabaseType
-    
-    init(cityId: String, database: DatabaseType) {
+    private let searchRestaurntsService: SearchRestaurntsServiceType
+
+    init(cityId: String, database: DatabaseType, searchRestaurntsService: SearchRestaurntsServiceType) {
         self.cityId = cityId
         self.database = database
+        self.searchRestaurntsService = searchRestaurntsService
     }
     
     public func viewLoaded() {
         self.loadCity()
+        self.loadCityRestaurnts()
     }
     
     private func loadCity() {
@@ -44,5 +48,12 @@ class CityMapVCViewModel: CityMapVCViewModelType {
             return
         }
         self.delegate?.updateViewDetails(city: city)
+    }
+    
+    private func loadCityRestaurnts() {
+        self.searchRestaurntsService.searchRestaurnts(cityId: self.cityId)
+            .then { [weak self] searchResults in
+                self?.delegate?.setMapRestaurnts(restaurntsSearchResults: searchResults)
+        }
     }
 }

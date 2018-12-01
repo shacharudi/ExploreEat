@@ -45,6 +45,7 @@ class AppBuilder {
     
     private func registerServices() {
         self.container.autoregister(SearchLocationsServiceType.self, initializer: SearchLocationsService.init)
+        self.container.autoregister(SearchRestaurntsServiceType.self, initializer: SearchRestaurntsService.init)
     }
     
     private func registerInteractors() {

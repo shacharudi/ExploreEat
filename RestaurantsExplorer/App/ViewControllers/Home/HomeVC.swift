@@ -47,7 +47,9 @@ class HomeVC: UIViewController {
         super.viewDidAppear(animated)
         self.navigationItem.hidesSearchBarWhenScrolling = true
         
-        self.viewModel.searchTermChanged(term: "Te")
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5, execute: {
+            self.viewModel.searchTermChanged(term: "Te")
+        })
     }
     
     override func viewDidLoad() {
