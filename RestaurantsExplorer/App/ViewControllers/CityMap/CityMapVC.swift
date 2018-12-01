@@ -92,6 +92,17 @@ class CityMapVC: UIViewController, CityMapVCViewModelDelegate {
     }
     
     func setMapRestaurnts(restaurntsSearchResults: RestaurntsSearchResultsList) {
-        
+        var locations = [LocationInMap]()
+        restaurntsSearchResults.restaurnts.forEach { restaurnt in
+            locations.append(
+                LocationInMap(
+                    locationId: restaurnt.restaurantId,
+                    title: restaurnt.name,
+                    latitude: restaurnt.latitude,
+                    longitude: restaurnt.longitude
+                )
+            )
+        }
+        self.cityMap.setLocations(locationsInMap: locations)
     }
 }

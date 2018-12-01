@@ -30,8 +30,8 @@ class Restaurnt: ModelType {
     @objc dynamic var address = ""
     @objc dynamic var city = ""
     @objc dynamic var cityId = ""
-    @objc dynamic var latitude = ""
-    @objc dynamic var longitude = ""
+    @objc dynamic var latitude: Double = 0
+    @objc dynamic var longitude: Double = 0
     @objc dynamic var cuisines = ""
     
     override static func primaryKey() -> String? {
@@ -51,8 +51,8 @@ class Restaurnt: ModelType {
         self.address = location[Restaurnt.Keys.address].stringValue
         self.city = location[Restaurnt.Keys.city].stringValue
         self.cityId = location[Restaurnt.Keys.cityId].stringValue
-        self.latitude = location[Restaurnt.Keys.latitude].stringValue
-        self.longitude = location[Restaurnt.Keys.longitude].stringValue
+        self.latitude = location[Restaurnt.Keys.latitude].doubleValue
+        self.longitude = location[Restaurnt.Keys.longitude].doubleValue
     }
 }
 

@@ -10,9 +10,17 @@ import Foundation
 import UIKit
 import MapKit
 
+struct LocationInMap {
+    let locationId: String
+    let title: String
+    let latitude: Double
+    let longitude: Double
+}
+
 class LocationsMap: UIView {
     
     private var mapView = MKMapView()
+    private var displayingAnnotations = [MKPointAnnotation]()
     
     init() {
         super.init(frame: .zero)
@@ -21,6 +29,34 @@ class LocationsMap: UIView {
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    public func setLocations(locationsInMap: [LocationInMap]) {
+        self.displayingAnnotations.removeAll()
+        
+        locationsInMap.forEach { location in
+            let annotation = self.createAnnotation(forLocation: location)
+            self.mapView.addAnnotation(annotation)
+            self.displayingAnnotations.append(annotation)
+        }
+        
+        self.centerToDisplayingAnnotations()
+    }
+    
+    // MARK: - Creating Annotations
+    
+    private func createAnnotation(forLocation: LocationInMap) -> MKPointAnnotation {
+        let annotation = MKPointAnnotation()
+        let centerCoordinate = CLLocationCoordinate2D(latitude: forLocation.latitude, longitude: forLocation.longitude)
+        annotation.coordinate = centerCoordinate
+        annotation.title = forLocation.title
+        return annotation
+    }
+    
+    // MARK: - Controlling Map
+    
+    private func centerToDisplayingAnnotations() {
+        self.mapView.showAnnotations(self.displayingAnnotations, animated: true)
     }
     
     // MARK: - Setup View UI
