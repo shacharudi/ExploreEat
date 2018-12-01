@@ -11,6 +11,7 @@ import RealmSwift
 
 protocol DatabaseType {
     func saveSelectedCity(city: City)
+    func getPreviousSearches() -> [City]
     func getCityById(cityId: String) -> City?
 }
 
@@ -29,6 +30,12 @@ class Database: DatabaseType {
         return realm.object(ofType: City.self, forPrimaryKey: cityId)
     }
 
+    public func getPreviousSearches() -> [City] {
+        let realm = self.getRealm()
+        let elements = realm.objects(City.self)
+        return Array(elements)
+    }
+    
     private func getRealm() -> Realm {
         do {
             return try Realm()

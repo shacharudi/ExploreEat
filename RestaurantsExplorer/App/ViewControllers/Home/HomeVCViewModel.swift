@@ -18,6 +18,7 @@ protocol HomeVCViewModelType {
     var searchState: Variable<AsyncLoadingState> { get }
     var citySearchResults: Variable<CitySearchResultsList?> { get }
     
+    func viewLoaded()
     func searchDismissed()
     func searchTermChanged(term: String)
     func saveSelectedCity(city: City)
@@ -54,6 +55,10 @@ class HomeVCViewModel: HomeVCViewModelType {
         self.database.saveSelectedCity(city: city)
     }
     
+    public func viewLoaded() {
+        self.showPreviousSearches()
+    }
+    
     private func searchReturned(searchResults: CitySearchResultsList) {
         self.citySearchResults.value = searchResults
         
@@ -65,6 +70,8 @@ class HomeVCViewModel: HomeVCViewModelType {
     }
     
     private func showPreviousSearches() {
-        self.citySearchResults.value = CitySearchResultsList(cities: [])
+        let cities = self.database.getPreviousSearches()
+        self.citySearchResults.value = CitySearchResultsList.init(cities: cities)
+        self.searchState.value = .hasResults
     }
 }

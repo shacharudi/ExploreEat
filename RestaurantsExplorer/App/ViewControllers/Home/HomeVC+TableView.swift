@@ -15,6 +15,7 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
         guard let cities = self.viewModel.citySearchResults.value?.cities else {
             return 0
         }
+        
         return cities.count
     }
     

@@ -46,10 +46,6 @@ class HomeVC: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         self.navigationItem.hidesSearchBarWhenScrolling = true
-        
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5, execute: {
-            self.viewModel.searchTermChanged(term: "Te")
-        })
     }
     
     override func viewDidLoad() {
@@ -67,6 +63,8 @@ class HomeVC: UIViewController {
         self.setupTableView()
         self.setupLoadingView()
         self.setupNavigationSearch()
+        
+        self.viewModel.viewLoaded()
     }
     
     // MARK: - Loading View
@@ -79,8 +77,9 @@ class HomeVC: UIViewController {
     }
     
     private func bindLoadingView() {
-        self.viewModel.searchState.asObservable().subscribe { [weak self] event in
+        self.viewModel.searchState.asObservable().skip(1).subscribe { [weak self] event in
             if let isState = event.element {
+                // next: make sure results show, write a test, add app icon
                 self?.searchStateChanged(searchState: isState)
             }
         }.disposed(by: self.disposeBag)
@@ -149,6 +148,7 @@ class HomeVC: UIViewController {
         self.searchController.searchBar
         .rx.text
         .orEmpty
+        .skip(1)
         .debounce(0.3, scheduler: MainScheduler.instance)
         .distinctUntilChanged()
         .subscribe(onNext: { [weak self] searchTerm in
