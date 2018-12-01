@@ -15,10 +15,10 @@ import RxSwift
 protocol HomeVCViewModelType {
     var viewTitle: String { get }
     var tableSectionTitle: String { get }
-    var searchState: Variable<AsyncSearchState> { get }
+    var searchState: Variable<AsyncLoadingState> { get }
     var citySearchResults: Variable<CitySearchResultsList?> { get }
     
-    func showPreviousSearches()
+    func searchDismissed()
     func searchTermChanged(term: String)
     func saveSelectedCity(city: City)
 }
@@ -27,7 +27,7 @@ class HomeVCViewModel: HomeVCViewModelType {
 
     public var viewTitle: String = Texts.homeVCViewTitle
     public var tableSectionTitle = Texts.searchCityNoPreviousSearches
-    public var searchState = Variable<AsyncSearchState>(.emptyTerm)
+    public var searchState = Variable<AsyncLoadingState>(.emptyTerm)
     public var citySearchResults = Variable<CitySearchResultsList?>(nil)
     
     private let searchLocationsService: SearchLocationsServiceType
@@ -39,15 +39,15 @@ class HomeVCViewModel: HomeVCViewModelType {
     }
     
     public func searchTermChanged(term: String) {
-        self.searchState.value = .searching
+        self.searchState.value = .loading
         self.searchLocationsService.searchLocation(term: term)
             .then { [weak self] searchResults in
                 self?.searchReturned(searchResults: searchResults)
         }
     }
     
-    public func showPreviousSearches() {
-        self.citySearchResults.value = CitySearchResultsList(cities: [])
+    public func searchDismissed() {
+        self.showPreviousSearches()
     }
     
     public func saveSelectedCity(city: City) {
@@ -56,10 +56,15 @@ class HomeVCViewModel: HomeVCViewModelType {
     
     private func searchReturned(searchResults: CitySearchResultsList) {
         self.citySearchResults.value = searchResults
+        
         if searchResults.cities.isEmpty {
             self.searchState.value = .noResults
         } else {
             self.searchState.value = .hasResults
         }
+    }
+    
+    private func showPreviousSearches() {
+        self.citySearchResults.value = CitySearchResultsList(cities: [])
     }
 }

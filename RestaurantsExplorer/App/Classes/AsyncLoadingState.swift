@@ -8,6 +8,6 @@
 
 import Foundation
 
-enum AsyncSearchState {
-    case emptyTerm, searching, noResults, hasResults
+enum AsyncLoadingState {
+    case emptyTerm, loading, noResults, hasResults
 }

@@ -7,14 +7,24 @@
 //
 
 import Foundation
+import Hydra
+import RxCocoa
+import RxSwift
 
 protocol CityMapVCViewModelDelegate: class {
     func updateViewDetails(city: City)
 }
 
-class CityMapVCViewModel {
+protocol CityMapVCViewModelType {
+    var loadingState: Variable<AsyncLoadingState> { get }
+    
+    func viewLoaded()
+}
+
+class CityMapVCViewModel: CityMapVCViewModelType {
     
     public weak var delegate: CityMapVCViewModelDelegate?
+    public var loadingState = Variable<AsyncLoadingState>(.loading)
     
     private let cityId: String
     private let database: DatabaseType
@@ -24,7 +34,7 @@ class CityMapVCViewModel {
         self.database = database
     }
     
-    public func viewLoad() {
+    public func viewLoaded() {
         self.loadCity()
     }
     

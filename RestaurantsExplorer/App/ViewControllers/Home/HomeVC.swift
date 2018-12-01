@@ -84,10 +84,9 @@ class HomeVC: UIViewController {
         }.disposed(by: self.disposeBag)
     }
     
-    private func searchStateChanged(searchState: AsyncSearchState) {
+    private func searchStateChanged(searchState: AsyncLoadingState) {
         switch searchState {
         case .emptyTerm:
-            self.viewModel.showPreviousSearches()
             self.tableView.isHidden = false
             self.loadingView.isHidden = true
         case .hasResults:
@@ -96,7 +95,7 @@ class HomeVC: UIViewController {
         case .noResults:
             self.tableView.isHidden = false
             self.loadingView.isHidden = true
-        case .searching:
+        case .loading:
             self.tableView.isHidden = true
             self.loadingView.isHidden = false
         }
@@ -172,4 +171,6 @@ class HomeVC: UIViewController {
         let cityMapVC = self.cityMapFactory.create(cityId: city.cityId)
         self.navigationController?.pushViewController(cityMapVC, animated: true)
     }
+    
+    // TODO: notify viewmodel when search is dismissed to show previos searches
 }
