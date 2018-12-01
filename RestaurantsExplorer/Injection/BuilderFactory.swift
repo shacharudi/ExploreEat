@@ -27,3 +27,19 @@ class CityMapFactory: Factory {
         return self.container.resolve(CityMapVC.self, argument: viewModel)!
     }
 }
+
+class RestaurntDetailsVCFactory: Factory {
+    func create(restaurntId: String) -> RestaurantDetailsVC {
+        self.container.autoregister(
+            RestaurantDetailsVCViewModel.self, argument: String.self, initializer: RestaurantDetailsVCViewModel.init
+        )
+        
+        let viewModel = self.container.resolve(RestaurantDetailsVCViewModel.self, argument: restaurntId)!
+        self.container.autoregister(
+            RestaurantDetailsVC.self,
+            argument: RestaurantDetailsVCViewModel.self,
+            initializer: RestaurantDetailsVC.init
+        )
+        return self.container.resolve(RestaurantDetailsVC.self, argument: viewModel)!
+    }
+}

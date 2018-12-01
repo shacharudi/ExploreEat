@@ -13,15 +13,17 @@ import PureLayout
 
 class CityMapVC: UIViewController, CityMapVCViewModelDelegate, LocationsMapDelegate {
 
-    private let viewModel: CityMapVCViewModel
+    private let viewModel: CityMapVCViewModelType
     private let cityDetailsView = CityDetailsView()
     private let loadingView = LoadingContentView()
     private let cityMap = LocationsMap()
 
+    private let restaurntDetailsVCFactory: RestaurntDetailsVCFactory
     private let disposeBag = DisposeBag()
     
-    init(cityVCViewModel: CityMapVCViewModel) {
+    init(cityVCViewModel: CityMapVCViewModelType, restaurntDetailsVCFactory: RestaurntDetailsVCFactory) {
         self.viewModel = cityVCViewModel
+        self.restaurntDetailsVCFactory = restaurntDetailsVCFactory
         super.init(nibName: nil, bundle: nil)
         self.viewModel.delegate = self
     }
@@ -99,6 +101,7 @@ class CityMapVC: UIViewController, CityMapVCViewModelDelegate, LocationsMapDeleg
     // MARK: - LocationsMapDelegate
     
     func didTappedLocation(locationId: String) {
-        print(locationId)
+        let detailsView = self.restaurntDetailsVCFactory.create(restaurntId: locationId)
+        self.navigationController?.pushViewController(detailsView, animated: true)
     }
 }

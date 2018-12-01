@@ -12,6 +12,7 @@ import SwiftyJSON
 
 protocol SearchRestaurntsServiceType {
     func searchRestaurnts(cityId: String) -> Promise<RestaurntsSearchResultsList>
+    func getRestaurntDetails(restaurntId: String) -> Promise<Restaurnt>
 }
 
 class SearchRestaurntsService: SearchRestaurntsServiceType {
@@ -34,6 +35,18 @@ class SearchRestaurntsService: SearchRestaurntsServiceType {
         }
     }
     
+    public func getRestaurntDetails(restaurntId: String) -> Promise<Restaurnt> {
+        return Promise<Restaurnt> { resolve, reject, _ in
+            let parser = self.createGetRestaurntDetailsParser()
+            self.requestDispatcher.dispatch(RequestRoute.getRestaurntDetails(restaurntId: restaurntId), parser: parser)
+                .then { restaurnt in
+                    resolve(restaurnt)
+                }.catch { error in
+                    reject(error)
+            }
+        }
+    }
+    
     private func createSearchParser() -> RequestResponseParser<RestaurntsSearchResultsList> {
         let parser = RequestResponseParser<RestaurntsSearchResultsList>
             .create(parseBlock: { (parsed: JSON) -> RestaurntsSearchResultsList in
@@ -42,6 +55,15 @@ class SearchRestaurntsService: SearchRestaurntsServiceType {
                     restaurnts.append(Restaurnt(json: restaurntJSON))
                 }
                 return RestaurntsSearchResultsList.init(restaurnts: restaurnts)
+            })
+        return parser
+    }
+    
+    private func createGetRestaurntDetailsParser() -> RequestResponseParser<Restaurnt> {
+        let parser = RequestResponseParser<Restaurnt>
+            .create(parseBlock: { (parsed: JSON) -> Restaurnt in
+                print(parsed)
+                return Restaurnt()
             })
         return parser
     }

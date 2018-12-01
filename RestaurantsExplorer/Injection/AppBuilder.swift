@@ -55,5 +55,6 @@ class AppBuilder {
     
     private func registerFactory() {
         self.container.autoregister(CityMapFactory.self, initializer: CityMapFactory.init)
+        self.container.autoregister(RestaurntDetailsVCFactory.self, initializer: RestaurntDetailsVCFactory.init)
     }
 }

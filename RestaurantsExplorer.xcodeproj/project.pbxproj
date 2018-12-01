@@ -51,6 +51,8 @@
 		C7D78CF321B2B43900406AE4 /* LocationsMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D78CF221B2B43900406AE4 /* LocationsMap.swift */; };
 		C7D78CF521B2B97B00406AE4 /* SearchRestaurntsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D78CF421B2B97B00406AE4 /* SearchRestaurntsService.swift */; };
 		C7D78CF721B2BA5C00406AE4 /* RestaurntsSearchResultsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D78CF621B2BA5C00406AE4 /* RestaurntsSearchResultsList.swift */; };
+		C7D78CFA21B2D4FC00406AE4 /* RestaurantDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D78CF921B2D4FC00406AE4 /* RestaurantDetailsVC.swift */; };
+		C7D78CFC21B2D50700406AE4 /* RestaurantDetailsVCViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D78CFB21B2D50700406AE4 /* RestaurantDetailsVCViewModel.swift */; };
 		FA21E299B2999266AB2D9676 /* Pods_RestaurantsExplorerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB6F467A91577D9A056EFAAE /* Pods_RestaurantsExplorerTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -127,6 +129,8 @@
 		C7D78CF221B2B43900406AE4 /* LocationsMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsMap.swift; sourceTree = "<group>"; };
 		C7D78CF421B2B97B00406AE4 /* SearchRestaurntsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRestaurntsService.swift; sourceTree = "<group>"; };
 		C7D78CF621B2BA5C00406AE4 /* RestaurntsSearchResultsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurntsSearchResultsList.swift; sourceTree = "<group>"; };
+		C7D78CF921B2D4FC00406AE4 /* RestaurantDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailsVC.swift; sourceTree = "<group>"; };
+		C7D78CFB21B2D50700406AE4 /* RestaurantDetailsVCViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailsVCViewModel.swift; sourceTree = "<group>"; };
 		CF94AF730349E984B15A8E0B /* Pods-RestaurantsExplorer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RestaurantsExplorer.release.xcconfig"; path = "Pods/Target Support Files/Pods-RestaurantsExplorer/Pods-RestaurantsExplorer.release.xcconfig"; sourceTree = "<group>"; };
 		FB6F467A91577D9A056EFAAE /* Pods_RestaurantsExplorerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RestaurantsExplorerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -276,6 +280,7 @@
 				C7D78CD421B2774C00406AE4 /* CustomViews */,
 				C7D78CA121B16C4D00406AE4 /* Home */,
 				C7D78CDE21B28B3800406AE4 /* CityMap */,
+				C7D78CF821B2D4DE00406AE4 /* RestaurantDetails */,
 				C7D78CB121B175E500406AE4 /* MainNavigationController.swift */,
 				C7D78C9D21B13AEA00406AE4 /* AppContainerVC.swift */,
 			);
@@ -406,6 +411,15 @@
 				C7D78CF221B2B43900406AE4 /* LocationsMap.swift */,
 			);
 			path = LocationsMap;
+			sourceTree = "<group>";
+		};
+		C7D78CF821B2D4DE00406AE4 /* RestaurantDetails */ = {
+			isa = PBXGroup;
+			children = (
+				C7D78CF921B2D4FC00406AE4 /* RestaurantDetailsVC.swift */,
+				C7D78CFB21B2D50700406AE4 /* RestaurantDetailsVCViewModel.swift */,
+			);
+			path = RestaurantDetails;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -680,6 +694,7 @@
 				C7D78CDD21B285CE00406AE4 /* Image.swift in Sources */,
 				C7D78CA621B16EFA00406AE4 /* ViewController.swift in Sources */,
 				C7D78CB021B1751800406AE4 /* Colors.swift in Sources */,
+				C7D78CFA21B2D4FC00406AE4 /* RestaurantDetailsVC.swift in Sources */,
 				C7D78CEE21B29A6F00406AE4 /* View.swift in Sources */,
 				C7D78CF321B2B43900406AE4 /* LocationsMap.swift in Sources */,
 				C7D78CC021B1883800406AE4 /* RequestDispatcher.swift in Sources */,
@@ -709,6 +724,7 @@
 				C7D78CE821B28FF300406AE4 /* Database.swift in Sources */,
 				C7D78CEC21B293E800406AE4 /* CityDetailsView.swift in Sources */,
 				C7D78CD921B27E9000406AE4 /* CitySearchCell.swift in Sources */,
+				C7D78CFC21B2D50700406AE4 /* RestaurantDetailsVCViewModel.swift in Sources */,
 				C7D78CC721B18D5300406AE4 /* Errors.swift in Sources */,
 				C7D78CEA21B2915000406AE4 /* ModelType.swift in Sources */,
 				C7D78CB921B17EF200406AE4 /* SearchLocationsService.swift in Sources */,

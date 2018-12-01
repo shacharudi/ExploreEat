@@ -16,7 +16,8 @@ protocol CityMapVCViewModelDelegate: class {
     func setMapRestaurnts(locationsInMap: [LocationInMap])
 }
 
-protocol CityMapVCViewModelType {
+protocol CityMapVCViewModelType: class {
+    var delegate: CityMapVCViewModelDelegate? { get set }
     var loadingState: Variable<AsyncLoadingState> { get }
     
     func viewLoaded()
