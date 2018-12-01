@@ -33,6 +33,9 @@
 		C7D78CC721B18D5300406AE4 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D78CC621B18D5300406AE4 /* Errors.swift */; };
 		C7D78CC921B19C8B00406AE4 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D78CC821B19C8B00406AE4 /* Array.swift */; };
 		C7D78CCC21B1A5E500406AE4 /* CitySearchResultsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D78CCB21B1A5E500406AE4 /* CitySearchResultsList.swift */; };
+		C7D78CCF21B1E90000406AE4 /* AsyncSearchState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D78CCE21B1E90000406AE4 /* AsyncSearchState.swift */; };
+		C7D78CD121B1ED7800406AE4 /* HomeVC+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D78CD021B1ED7800406AE4 /* HomeVC+TableView.swift */; };
+		C7D78CD321B2707600406AE4 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D78CD221B2707600406AE4 /* Fonts.swift */; };
 		FA21E299B2999266AB2D9676 /* Pods_RestaurantsExplorerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB6F467A91577D9A056EFAAE /* Pods_RestaurantsExplorerTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -91,6 +94,9 @@
 		C7D78CC621B18D5300406AE4 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 		C7D78CC821B19C8B00406AE4 /* Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
 		C7D78CCB21B1A5E500406AE4 /* CitySearchResultsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitySearchResultsList.swift; sourceTree = "<group>"; };
+		C7D78CCE21B1E90000406AE4 /* AsyncSearchState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncSearchState.swift; sourceTree = "<group>"; };
+		C7D78CD021B1ED7800406AE4 /* HomeVC+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeVC+TableView.swift"; sourceTree = "<group>"; };
+		C7D78CD221B2707600406AE4 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		CF94AF730349E984B15A8E0B /* Pods-RestaurantsExplorer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RestaurantsExplorer.release.xcconfig"; path = "Pods/Target Support Files/Pods-RestaurantsExplorer/Pods-RestaurantsExplorer.release.xcconfig"; sourceTree = "<group>"; };
 		FB6F467A91577D9A056EFAAE /* Pods_RestaurantsExplorerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RestaurantsExplorerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -221,6 +227,7 @@
 		C7D78C9B21B13ACD00406AE4 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				C7D78CCD21B1E8C800406AE4 /* Classes */,
 				C7D78CCA21B1A5DA00406AE4 /* Model */,
 				C7D78CBC21B1869900406AE4 /* Common */,
 				C7D78CB721B17ED500406AE4 /* Services */,
@@ -244,6 +251,7 @@
 			children = (
 				C7D78CA221B16C8400406AE4 /* HomeVC.swift */,
 				C7D78CA721B16F5E00406AE4 /* HomeVCViewModel.swift */,
+				C7D78CD021B1ED7800406AE4 /* HomeVC+TableView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -266,6 +274,7 @@
 				C7D78CAF21B1751800406AE4 /* Colors.swift */,
 				C7D78CB321B179B600406AE4 /* Icons.swift */,
 				C7D78CBA21B1865F00406AE4 /* Config.swift */,
+				C7D78CD221B2707600406AE4 /* Fonts.swift */,
 			);
 			path = Theme;
 			sourceTree = "<group>";
@@ -302,6 +311,14 @@
 				C7D78CCB21B1A5E500406AE4 /* CitySearchResultsList.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		C7D78CCD21B1E8C800406AE4 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C7D78CCE21B1E90000406AE4 /* AsyncSearchState.swift */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -509,6 +526,9 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/HydraAsync/Hydra.framework",
 				"${BUILT_PRODUCTS_DIR}/PureLayout/PureLayout.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftIcons/SwiftIcons.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
@@ -521,6 +541,9 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hydra.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PureLayout.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftIcons.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
@@ -569,10 +592,13 @@
 				C7D78C9E21B13AEA00406AE4 /* AppContainerVC.swift in Sources */,
 				C7D78CB221B175E500406AE4 /* MainNavigationController.swift in Sources */,
 				C7D78CA321B16C8400406AE4 /* HomeVC.swift in Sources */,
+				C7D78CD121B1ED7800406AE4 /* HomeVC+TableView.swift in Sources */,
+				C7D78CD321B2707600406AE4 /* Fonts.swift in Sources */,
 				C7D78CC921B19C8B00406AE4 /* Array.swift in Sources */,
 				C704BFB521B132B7006B377F /* AppDelegate.swift in Sources */,
 				C7D78CAD21B1725E00406AE4 /* Metrics.swift in Sources */,
 				C7D78CA821B16F5E00406AE4 /* HomeVCViewModel.swift in Sources */,
+				C7D78CCF21B1E90000406AE4 /* AsyncSearchState.swift in Sources */,
 				C7D78CC221B18A2400406AE4 /* RequestResponseParser.swift in Sources */,
 				C7D78C9A21B139A900406AE4 /* Logger.swift in Sources */,
 				C7D78CAB21B1724B00406AE4 /* Texts.swift in Sources */,

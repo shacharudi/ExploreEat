@@ -7,11 +7,17 @@
 //
 
 import UIKit
+import RxCocoa
+import RxSwift
+import PureLayout
 
 class HomeVC: UIViewController {
 
-    private let viewModel: HomeVCViewModelType
+    internal let viewModel: HomeVCViewModelType
+    
+    private let tableView = UITableView()
     private let searchController = UISearchController.init(searchResultsController: nil)
+    private let disposeBag = DisposeBag()
     
     init(viewModel: HomeVCViewModelType) {
         self.viewModel = viewModel
@@ -34,7 +40,16 @@ class HomeVC: UIViewController {
         self.title = self.viewModel.viewTitle
         
         self.setupNavigationButtons()
+        self.setupTableView()
         self.setupNavigationSearch()
+    }
+    
+    private func setupTableView() {
+        self.view.addSubview(self.tableView)
+        self.tableView.delegate = self
+        self.tableView.dataSource = self
+        self.tableView.autoPin(toTopLayoutGuideOf: self, withInset: 0)
+        self.tableView.autoPinEdgesToSuperviewEdges(with: UIEdgeInsets.zero, excludingEdge: .top)
     }
     
     private func setupNavigationButtons() {
@@ -47,22 +62,27 @@ class HomeVC: UIViewController {
     }
     
     private func setupNavigationSearch() {
-        self.searchController.searchResultsUpdater = self
         self.searchController.searchBar.placeholder = Texts.homeVCSearchTitle
-        self.navigationItem.searchController = self.searchController
+        self.searchController.hidesNavigationBarDuringPresentation = false
+        self.searchController.searchBar.barTintColor = Colors.navigationBar
+        self.tableView.tableHeaderView = searchController.searchBar
+        self.bindSearch()
+    }
+    
+    private func bindSearch() {
+        self.searchController.searchBar
+        .rx.text
+        .orEmpty
+        .debounce(0.3, scheduler: MainScheduler.instance)
+        .distinctUntilChanged()
+        .subscribe(onNext: { [weak self] searchTerm in
+            self?.viewModel.searchTermChanged(term: searchTerm)
+        }).disposed(by: self.disposeBag)
     }
     
     // MARK: - Navigation Actions
     
     @objc private func tappedPlusButton() {
         
-    }
-}
-
-extension HomeVC: UISearchResultsUpdating {
-    func updateSearchResults(for searchController: UISearchController) {
-        guard let searchTerm = searchController.searchBar.text else {
-            return
-        }  
     }
 }

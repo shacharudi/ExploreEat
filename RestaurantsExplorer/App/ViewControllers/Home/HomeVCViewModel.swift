@@ -9,22 +9,44 @@
 import Foundation
 import UIKit
 import Hydra
+import RxCocoa
+import RxSwift
 
 protocol HomeVCViewModelType {
     var viewTitle: String { get }
+    var tableSectionTitle: String { get }
+    var searchState: Variable<AsyncSearchState> { get }
+    var citySearchResults: Variable<CitySearchResultsList?> { get }
+    
+    func searchTermChanged(term: String)
 }
 
 class HomeVCViewModel: HomeVCViewModelType {
 
     public var viewTitle: String = Texts.homeVCViewTitle
-
+    public var tableSectionTitle = Texts.searchCityNoPreviousSearches
+    public var searchState = Variable<AsyncSearchState>(.emptyTerm)
+    public var citySearchResults = Variable<CitySearchResultsList?>(nil)
+    
     private let searchLocationsService: SearchLocationsServiceType
     
     init(searchLocationsService: SearchLocationsServiceType) {
         self.searchLocationsService = searchLocationsService
-        self.searchLocationsService.searchLocation(term: "Tel")
-            .then { searchResults in
-                print(searchResults.cities)
+    }
+    
+    public func searchTermChanged(term: String) {
+        self.searchState.value = .searching
+        self.searchLocationsService.searchLocation(term: term)
+            .then { [weak self] searchResults in
+                self?.searchReturned(searchResults: searchResults)
+        }
+    }
+    
+    private func searchReturned(searchResults: CitySearchResultsList) {
+        if searchResults.cities.isEmpty {
+            self.searchState.value = .noResults
+        } else {
+            self.searchState.value = .hasResults
         }
     }
 }

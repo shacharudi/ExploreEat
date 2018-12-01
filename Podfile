@@ -10,6 +10,8 @@ def installPods
   pod 'HydraAsync'
   pod 'Alamofire'
   pod 'SwiftyJSON'
+  pod "RxSwift"
+  pod "RxCocoa"
 end
 
 Swift4Targets = [
