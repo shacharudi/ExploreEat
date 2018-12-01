@@ -10,5 +10,8 @@ import Foundation
 import UIKit
 
 enum Fonts {
-    static let tableSectionTitle = UIFont.systemFont(ofSize: 16)
+    enum CitySearchCell {
+        static let cityName = UIFont.systemFont(ofSize: 16)
+        static let countryName = UIFont.systemFont(ofSize: 12)
+    }
 }

@@ -100,6 +100,7 @@ class HomeVC: UIViewController {
         self.tableView.dataSource = self
         self.tableView.autoPin(toTopLayoutGuideOf: self, withInset: 0)
         self.tableView.autoPinEdgesToSuperviewEdges(with: UIEdgeInsets.zero, excludingEdge: .top)
+        self.tableView.register(CitySearchCell.self, forCellReuseIdentifier: CitySearchCell.identifier)
         self.bindTableSearchResults()
     }
     

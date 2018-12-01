@@ -37,6 +37,9 @@
 		C7D78CD121B1ED7800406AE4 /* HomeVC+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D78CD021B1ED7800406AE4 /* HomeVC+TableView.swift */; };
 		C7D78CD321B2707600406AE4 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D78CD221B2707600406AE4 /* Fonts.swift */; };
 		C7D78CD621B2776200406AE4 /* LoadingContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D78CD521B2776200406AE4 /* LoadingContentView.swift */; };
+		C7D78CD921B27E9000406AE4 /* CitySearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D78CD821B27E9000406AE4 /* CitySearchCell.swift */; };
+		C7D78CDB21B2850800406AE4 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D78CDA21B2850800406AE4 /* Images.swift */; };
+		C7D78CDD21B285CE00406AE4 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D78CDC21B285CE00406AE4 /* Image.swift */; };
 		FA21E299B2999266AB2D9676 /* Pods_RestaurantsExplorerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB6F467A91577D9A056EFAAE /* Pods_RestaurantsExplorerTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -99,6 +102,9 @@
 		C7D78CD021B1ED7800406AE4 /* HomeVC+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeVC+TableView.swift"; sourceTree = "<group>"; };
 		C7D78CD221B2707600406AE4 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		C7D78CD521B2776200406AE4 /* LoadingContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingContentView.swift; sourceTree = "<group>"; };
+		C7D78CD821B27E9000406AE4 /* CitySearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitySearchCell.swift; sourceTree = "<group>"; };
+		C7D78CDA21B2850800406AE4 /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		C7D78CDC21B285CE00406AE4 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		CF94AF730349E984B15A8E0B /* Pods-RestaurantsExplorer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RestaurantsExplorer.release.xcconfig"; path = "Pods/Target Support Files/Pods-RestaurantsExplorer/Pods-RestaurantsExplorer.release.xcconfig"; sourceTree = "<group>"; };
 		FB6F467A91577D9A056EFAAE /* Pods_RestaurantsExplorerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RestaurantsExplorerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -241,6 +247,7 @@
 		C7D78C9C21B13AD900406AE4 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				C7D78CD721B27E6300406AE4 /* TableViewCells */,
 				C7D78CD421B2774C00406AE4 /* CustomViews */,
 				C7D78CA121B16C4D00406AE4 /* Home */,
 				C7D78CB121B175E500406AE4 /* MainNavigationController.swift */,
@@ -265,6 +272,7 @@
 				C7D78CA521B16EFA00406AE4 /* ViewController.swift */,
 				C7D78CC621B18D5300406AE4 /* Errors.swift */,
 				C7D78CC821B19C8B00406AE4 /* Array.swift */,
+				C7D78CDC21B285CE00406AE4 /* Image.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -278,6 +286,7 @@
 				C7D78CB321B179B600406AE4 /* Icons.swift */,
 				C7D78CBA21B1865F00406AE4 /* Config.swift */,
 				C7D78CD221B2707600406AE4 /* Fonts.swift */,
+				C7D78CDA21B2850800406AE4 /* Images.swift */,
 			);
 			path = Theme;
 			sourceTree = "<group>";
@@ -330,6 +339,14 @@
 				C7D78CD521B2776200406AE4 /* LoadingContentView.swift */,
 			);
 			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		C7D78CD721B27E6300406AE4 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				C7D78CD821B27E9000406AE4 /* CitySearchCell.swift */,
+			);
+			path = TableViewCells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -536,6 +553,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-RestaurantsExplorer/Pods-RestaurantsExplorer-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/HydraAsync/Hydra.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/PureLayout/PureLayout.framework",
 				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
@@ -551,6 +569,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hydra.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PureLayout.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
@@ -595,6 +614,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7D78CC521B18C6B00406AE4 /* RequestRoute.swift in Sources */,
+				C7D78CDD21B285CE00406AE4 /* Image.swift in Sources */,
 				C7D78CA621B16EFA00406AE4 /* ViewController.swift in Sources */,
 				C7D78CB021B1751800406AE4 /* Colors.swift in Sources */,
 				C7D78CC021B1883800406AE4 /* RequestDispatcher.swift in Sources */,
@@ -611,10 +631,12 @@
 				C7D78CA821B16F5E00406AE4 /* HomeVCViewModel.swift in Sources */,
 				C7D78CD621B2776200406AE4 /* LoadingContentView.swift in Sources */,
 				C7D78CCF21B1E90000406AE4 /* AsyncSearchState.swift in Sources */,
+				C7D78CDB21B2850800406AE4 /* Images.swift in Sources */,
 				C7D78CC221B18A2400406AE4 /* RequestResponseParser.swift in Sources */,
 				C7D78C9A21B139A900406AE4 /* Logger.swift in Sources */,
 				C7D78CAB21B1724B00406AE4 /* Texts.swift in Sources */,
 				C704BFE421B1378B006B377F /* AppBuilder.swift in Sources */,
+				C7D78CD921B27E9000406AE4 /* CitySearchCell.swift in Sources */,
 				C7D78CC721B18D5300406AE4 /* Errors.swift in Sources */,
 				C7D78CB921B17EF200406AE4 /* SearchLocationsService.swift in Sources */,
 				C7D78CCC21B1A5E500406AE4 /* CitySearchResultsList.swift in Sources */,

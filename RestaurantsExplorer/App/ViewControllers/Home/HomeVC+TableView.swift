@@ -18,9 +18,24 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
         return cities.count
     }
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return Metrics.SearchCityCell.cellHeight
+    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()
-        cell.backgroundColor = .red
+        guard let cell = tableView.dequeueReusableCell(
+            withIdentifier: CitySearchCell.identifier,
+            for: indexPath
+        ) as? CitySearchCell else {
+            Logger.error(message: "Can't dequeueReusableCell at row index: \(indexPath.row)")
+            return UITableViewCell()
+        }
+        
+        guard let city = self.viewModel.citySearchResults.value?.cities[indexPath.row] else {
+            Logger.error(message: "Can't get city at row index: \(indexPath.row)")
+            return cell
+        }
+        cell.setCellCity(city: city)
         return cell
     }
 }

@@ -1,6 +1,7 @@
 PODS:
   - Alamofire (4.8.0)
   - HydraAsync (1.2.1)
+  - Kingfisher (4.10.1)
   - PureLayout (3.1.4)
   - RxAtomic (4.4.0)
   - RxCocoa (4.4.0):
@@ -17,6 +18,7 @@ PODS:
 DEPENDENCIES:
   - Alamofire
   - HydraAsync
+  - Kingfisher
   - PureLayout
   - RxCocoa
   - RxSwift
@@ -30,6 +32,7 @@ SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
     - HydraAsync
+    - Kingfisher
     - PureLayout
     - RxAtomic
     - RxCocoa
@@ -43,6 +46,7 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   Alamofire: 3ec537f71edc9804815215393ae2b1a8ea33a844
   HydraAsync: 8f2ab62d57e140b4ca587ae0f66e1eb04e8e6965
+  Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
   PureLayout: f08c01b8dec00bb14a1fefa3de4c7d9c265df85e
   RxAtomic: eacf60db868c96bfd63320e28619fe29c179656f
   RxCocoa: df63ebf7b9a70d6b4eeea407ed5dd4efc8979749
@@ -53,6 +57,6 @@ SPEC CHECKSUMS:
   Swinject: 82cdb851f63f91bba974e3eca1d69780f2f7677e
   SwinjectAutoregistration: f72bf894cbd2ee4a9153e00fa5208e93fb44d283
 
-PODFILE CHECKSUM: a4724fb201a7b11f4135250313ffcfe1893f644e
+PODFILE CHECKSUM: f5d3521530aa1f8c79e835dbda8dc6b6d1f68f1d
 
 COCOAPODS: 1.5.3
