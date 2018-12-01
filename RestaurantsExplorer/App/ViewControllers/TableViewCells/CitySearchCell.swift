@@ -89,5 +89,7 @@ class CitySearchCell: UITableViewCell {
         
         self.countryFlag.contentMode = .scaleAspectFit
         self.countryFlag.layer.cornerRadius = Metrics.SearchCityCell.flagCornetRadius
+        
+        self.accessoryType = .disclosureIndicator
     }
 }

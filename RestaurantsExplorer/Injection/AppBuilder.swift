@@ -23,6 +23,7 @@ class AppBuilder {
         self.registerViewModels()
         self.registerServices()
         self.registerInteractors()
+        self.registerFactory()
     }
     
     public func rootViewController() -> UIViewController {
@@ -48,5 +49,9 @@ class AppBuilder {
     
     private func registerInteractors() {
         self.container.autoregister(RequestDispatcherType.self, initializer: RequestDispatcher.init)
+    }
+    
+    private func registerFactory() {
+        self.container.autoregister(CityMapFactory.self, initializer: CityMapFactory.init)
     }
 }

@@ -14,6 +14,7 @@ import PureLayout
 class HomeVC: UIViewController {
 
     internal let viewModel: HomeVCViewModelType
+    private let cityMapFactory: CityMapFactory
     
     private let tableView = UITableView()
     private let searchController = UISearchController.init(searchResultsController: nil)
@@ -21,8 +22,9 @@ class HomeVC: UIViewController {
     
     private let disposeBag = DisposeBag()
     
-    init(viewModel: HomeVCViewModelType) {
+    init(viewModel: HomeVCViewModelType, cityMapFactory: CityMapFactory) {
         self.viewModel = viewModel
+        self.cityMapFactory = cityMapFactory
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -102,6 +104,7 @@ class HomeVC: UIViewController {
         self.tableView.autoPinEdgesToSuperviewEdges(with: UIEdgeInsets.zero, excludingEdge: .top)
         self.tableView.register(CitySearchCell.self, forCellReuseIdentifier: CitySearchCell.identifier)
         self.bindTableSearchResults()
+        self.definesPresentationContext = true
     }
     
     private func bindTableSearchResults() {
@@ -126,6 +129,7 @@ class HomeVC: UIViewController {
     private func setupNavigationSearch() {
         self.searchController.searchBar.placeholder = Texts.homeVCSearchTitle
         self.searchController.hidesNavigationBarDuringPresentation = false
+        self.searchController.dimsBackgroundDuringPresentation = false
         self.searchController.searchBar.barTintColor = Colors.navigationBar
         self.searchController.searchBar.tintColor = Colors.textWhite
         self.navigationItem.searchController = searchController
@@ -147,5 +151,17 @@ class HomeVC: UIViewController {
     
     @objc private func tappedPlusButton() {
         
+    }
+    
+    // MARK: - Presenting City Map
+    
+    internal func didSelectCity(city: City) {
+        // save in db
+        self.presentCityMap(city: city)
+    }
+    
+    private func presentCityMap(city: City) {
+        let cityMapVC = self.cityMapFactory.create(cityId: city.cityId)
+        self.navigationController?.pushViewController(cityMapVC, animated: true)
     }
 }

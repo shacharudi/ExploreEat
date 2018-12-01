@@ -40,6 +40,9 @@
 		C7D78CD921B27E9000406AE4 /* CitySearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D78CD821B27E9000406AE4 /* CitySearchCell.swift */; };
 		C7D78CDB21B2850800406AE4 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D78CDA21B2850800406AE4 /* Images.swift */; };
 		C7D78CDD21B285CE00406AE4 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D78CDC21B285CE00406AE4 /* Image.swift */; };
+		C7D78CE021B28B6500406AE4 /* CityMapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D78CDF21B28B6500406AE4 /* CityMapVC.swift */; };
+		C7D78CE221B28BA300406AE4 /* BuilderFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D78CE121B28BA300406AE4 /* BuilderFactory.swift */; };
+		C7D78CE421B28CC800406AE4 /* CityMapVCViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D78CE321B28CC800406AE4 /* CityMapVCViewModel.swift */; };
 		FA21E299B2999266AB2D9676 /* Pods_RestaurantsExplorerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB6F467A91577D9A056EFAAE /* Pods_RestaurantsExplorerTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -105,6 +108,9 @@
 		C7D78CD821B27E9000406AE4 /* CitySearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitySearchCell.swift; sourceTree = "<group>"; };
 		C7D78CDA21B2850800406AE4 /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		C7D78CDC21B285CE00406AE4 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		C7D78CDF21B28B6500406AE4 /* CityMapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityMapVC.swift; sourceTree = "<group>"; };
+		C7D78CE121B28BA300406AE4 /* BuilderFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuilderFactory.swift; sourceTree = "<group>"; };
+		C7D78CE321B28CC800406AE4 /* CityMapVCViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityMapVCViewModel.swift; sourceTree = "<group>"; };
 		CF94AF730349E984B15A8E0B /* Pods-RestaurantsExplorer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RestaurantsExplorer.release.xcconfig"; path = "Pods/Target Support Files/Pods-RestaurantsExplorer/Pods-RestaurantsExplorer.release.xcconfig"; sourceTree = "<group>"; };
 		FB6F467A91577D9A056EFAAE /* Pods_RestaurantsExplorerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RestaurantsExplorerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -220,6 +226,7 @@
 			isa = PBXGroup;
 			children = (
 				C704BFE321B1378B006B377F /* AppBuilder.swift */,
+				C7D78CE121B28BA300406AE4 /* BuilderFactory.swift */,
 			);
 			path = Injection;
 			sourceTree = "<group>";
@@ -250,6 +257,7 @@
 				C7D78CD721B27E6300406AE4 /* TableViewCells */,
 				C7D78CD421B2774C00406AE4 /* CustomViews */,
 				C7D78CA121B16C4D00406AE4 /* Home */,
+				C7D78CDE21B28B3800406AE4 /* CityMap */,
 				C7D78CB121B175E500406AE4 /* MainNavigationController.swift */,
 				C7D78C9D21B13AEA00406AE4 /* AppContainerVC.swift */,
 			);
@@ -347,6 +355,15 @@
 				C7D78CD821B27E9000406AE4 /* CitySearchCell.swift */,
 			);
 			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		C7D78CDE21B28B3800406AE4 /* CityMap */ = {
+			isa = PBXGroup;
+			children = (
+				C7D78CDF21B28B6500406AE4 /* CityMapVC.swift */,
+				C7D78CE321B28CC800406AE4 /* CityMapVCViewModel.swift */,
+			);
+			path = CityMap;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -623,6 +640,8 @@
 				C7D78C9E21B13AEA00406AE4 /* AppContainerVC.swift in Sources */,
 				C7D78CB221B175E500406AE4 /* MainNavigationController.swift in Sources */,
 				C7D78CA321B16C8400406AE4 /* HomeVC.swift in Sources */,
+				C7D78CE021B28B6500406AE4 /* CityMapVC.swift in Sources */,
+				C7D78CE421B28CC800406AE4 /* CityMapVCViewModel.swift in Sources */,
 				C7D78CD121B1ED7800406AE4 /* HomeVC+TableView.swift in Sources */,
 				C7D78CD321B2707600406AE4 /* Fonts.swift in Sources */,
 				C7D78CC921B19C8B00406AE4 /* Array.swift in Sources */,
@@ -630,6 +649,7 @@
 				C7D78CAD21B1725E00406AE4 /* Metrics.swift in Sources */,
 				C7D78CA821B16F5E00406AE4 /* HomeVCViewModel.swift in Sources */,
 				C7D78CD621B2776200406AE4 /* LoadingContentView.swift in Sources */,
+				C7D78CE221B28BA300406AE4 /* BuilderFactory.swift in Sources */,
 				C7D78CCF21B1E90000406AE4 /* AsyncSearchState.swift in Sources */,
 				C7D78CDB21B2850800406AE4 /* Images.swift in Sources */,
 				C7D78CC221B18A2400406AE4 /* RequestResponseParser.swift in Sources */,

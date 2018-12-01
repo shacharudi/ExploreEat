@@ -38,4 +38,12 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
         cell.setCellCity(city: city)
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let city = self.viewModel.citySearchResults.value?.cities[indexPath.row] else {
+            Logger.error(message: "Can't select city at row index: \(indexPath.row)")
+            return
+        }
+        self.didSelectCity(city: city)
+    }
 }
