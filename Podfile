@@ -13,6 +13,7 @@ def installPods
   pod "RxSwift"
   pod "RxCocoa"
   pod 'Kingfisher'
+  pod 'RealmSwift'
 end
 
 Swift4Targets = [

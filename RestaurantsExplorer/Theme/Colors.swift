@@ -14,6 +14,7 @@ enum Colors {
     static let textWhite = UIColor.init(red: 236/255.0, green: 240/255.0, blue: 241/255.0, alpha: 1.0)
     static let navigationBar = UIColor.init(red: 192/255.0, green: 57/255.0, blue: 43/255.0, alpha: 1.0)
     static let sectionTitle = UIColor.init(red: 44/255.0, green: 62/255.0, blue: 80/255.0, alpha: 1.0)
+    static let seperator = UIColor.init(red: 127/255.0, green: 140/255.0, blue: 141/255.0, alpha: 0.3)
     
     enum CitySearchCell {
         static let cityName = UIColor.init(red: 192/255.0, green: 57/255.0, blue: 43/255.0, alpha: 1.0)        

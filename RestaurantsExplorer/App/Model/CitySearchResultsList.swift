@@ -9,7 +9,7 @@
 import Foundation
 import SwiftyJSON
 
-struct City {
+class City: ModelType {
     private struct Keys {
         static let cityId = "id"
         static let countryName = "country_name"
@@ -17,18 +17,22 @@ struct City {
         static let countryFlagImageUrl = "country_flag_url"
     }
     
-    let cityId: String
-    let countryName: String
-    let cityName: String
-    let countryFlagImageUrl: String
+    @objc dynamic var cityId: String = ""
+    @objc dynamic var countryName: String = ""
+    @objc dynamic var cityName: String = ""
+    @objc dynamic var countryFlagImageUrl: String = ""
     
-    init(json: JSON) {
+    override static func primaryKey() -> String? {
+        return "cityId"
+    }
+    
+    convenience init(json: JSON) {
+        self.init()
         self.cityId = json[City.Keys.cityId].stringValue
         self.countryName = json[City.Keys.countryName].stringValue
         self.cityName = json[City.Keys.cityName].stringValue
         self.countryFlagImageUrl = json[City.Keys.countryFlagImageUrl].stringValue
     }
-
 }
 
 class CitySearchResultsList {

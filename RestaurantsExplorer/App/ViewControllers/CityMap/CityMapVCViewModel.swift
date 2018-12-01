@@ -8,12 +8,31 @@
 
 import Foundation
 
+protocol CityMapVCViewModelDelegate: class {
+    func updateViewDetails(city: City)
+}
+
 class CityMapVCViewModel {
     
-    private let cityId: String
+    public weak var delegate: CityMapVCViewModelDelegate?
     
-    init(cityId: String) {
+    private let cityId: String
+    private let database: DatabaseType
+    
+    init(cityId: String, database: DatabaseType) {
         self.cityId = cityId
-        print(cityId)
+        self.database = database
+    }
+    
+    public func viewLoad() {
+        self.loadCity()
+    }
+    
+    private func loadCity() {
+        guard let city = self.database.getCityById(cityId: self.cityId) else {
+            Logger.error(message: "Can't find city with id: \(cityId) in database!")
+            return
+        }
+        self.delegate?.updateViewDetails(city: city)
     }
 }

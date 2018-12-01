@@ -20,6 +20,7 @@ protocol HomeVCViewModelType {
     
     func showPreviousSearches()
     func searchTermChanged(term: String)
+    func saveSelectedCity(city: City)
 }
 
 class HomeVCViewModel: HomeVCViewModelType {
@@ -30,9 +31,11 @@ class HomeVCViewModel: HomeVCViewModelType {
     public var citySearchResults = Variable<CitySearchResultsList?>(nil)
     
     private let searchLocationsService: SearchLocationsServiceType
+    private let database: DatabaseType
     
-    init(searchLocationsService: SearchLocationsServiceType) {
+    init(searchLocationsService: SearchLocationsServiceType, database: DatabaseType) {
         self.searchLocationsService = searchLocationsService
+        self.database = database
     }
     
     public func searchTermChanged(term: String) {
@@ -47,10 +50,12 @@ class HomeVCViewModel: HomeVCViewModelType {
         self.citySearchResults.value = CitySearchResultsList(cities: [])
     }
     
+    public func saveSelectedCity(city: City) {
+        self.database.saveSelectedCity(city: city)
+    }
+    
     private func searchReturned(searchResults: CitySearchResultsList) {
-        
         self.citySearchResults.value = searchResults
-        
         if searchResults.cities.isEmpty {
             self.searchState.value = .noResults
         } else {

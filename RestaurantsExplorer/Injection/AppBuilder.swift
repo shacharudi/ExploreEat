@@ -49,6 +49,7 @@ class AppBuilder {
     
     private func registerInteractors() {
         self.container.autoregister(RequestDispatcherType.self, initializer: RequestDispatcher.init)
+        self.container.autoregister(DatabaseType.self, initializer: Database.init).inObjectScope(.container)
     }
     
     private func registerFactory() {

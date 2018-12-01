@@ -8,13 +8,15 @@
 
 import UIKit
 
-class CityMapVC: UIViewController {
+class CityMapVC: UIViewController, CityMapVCViewModelDelegate {
 
     private let viewModel: CityMapVCViewModel
+    private let cityDetailsView = CityDetailsView()
     
     init(cityVCViewModel: CityMapVCViewModel) {
         self.viewModel = cityVCViewModel
         super.init(nibName: nil, bundle: nil)
+        self.viewModel.delegate = self
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -23,6 +25,26 @@ class CityMapVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = .blue
+        self.setupView()
+        self.viewModel.viewLoad()
+    }
+    
+    private func setupView() {
+        self.view.backgroundColor = Colors.viewControllerBackground
+        self.setupCityDetails()
+    }
+    
+    // MARK: - CityDetailsView
+    
+    private func setupCityDetails() {
+        self.view.addSubview(self.cityDetailsView)
+        self.cityDetailsView.autoPinEdgesToSuperviewSafeArea(with: UIEdgeInsets.zero, excludingEdge: .bottom)
+        self.cityDetailsView.autoSetDimension(.height, toSize: CityDetailsView.ViewStyle.viewHeight)
+    }
+    
+    // MARK: - CityMapVCViewModelDelegate
+    
+    func updateViewDetails(city: City) {
+        self.cityDetailsView.setViewCity(city: city)
     }
 }

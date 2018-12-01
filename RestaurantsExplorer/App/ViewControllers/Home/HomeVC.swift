@@ -15,6 +15,7 @@ class HomeVC: UIViewController {
 
     internal let viewModel: HomeVCViewModelType
     private let cityMapFactory: CityMapFactory
+    private let database: DatabaseType
     
     private let tableView = UITableView()
     private let searchController = UISearchController.init(searchResultsController: nil)
@@ -22,9 +23,14 @@ class HomeVC: UIViewController {
     
     private let disposeBag = DisposeBag()
     
-    init(viewModel: HomeVCViewModelType, cityMapFactory: CityMapFactory) {
+    init(
+        viewModel: HomeVCViewModelType,
+        cityMapFactory: CityMapFactory,
+        database: DatabaseType
+    ) {
         self.viewModel = viewModel
         self.cityMapFactory = cityMapFactory
+        self.database = database
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -40,6 +46,8 @@ class HomeVC: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         self.navigationItem.hidesSearchBarWhenScrolling = true
+        
+        self.viewModel.searchTermChanged(term: "Te")
     }
     
     override func viewDidLoad() {
@@ -156,7 +164,7 @@ class HomeVC: UIViewController {
     // MARK: - Presenting City Map
     
     internal func didSelectCity(city: City) {
-        // save in db
+        self.viewModel.saveSelectedCity(city: city)
         self.presentCityMap(city: city)
     }
     
