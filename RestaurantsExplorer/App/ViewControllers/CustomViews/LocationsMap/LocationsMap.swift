@@ -10,6 +10,10 @@ import Foundation
 import UIKit
 import MapKit
 
+class LocationAnnotation: MKPointAnnotation {
+    var locationId: String?
+}
+
 struct LocationInMap {
     let locationId: String
     let title: String
@@ -17,10 +21,16 @@ struct LocationInMap {
     let longitude: Double
 }
 
-class LocationsMap: UIView {
+protocol LocationsMapDelegate: class {
+    func didTappedLocation(locationId: String)
+}
+
+class LocationsMap: UIView, MKMapViewDelegate {
+    
+    public weak var delegate: LocationsMapDelegate?
     
     private var mapView = MKMapView()
-    private var displayingAnnotations = [MKPointAnnotation]()
+    private var displayingAnnotations = [LocationAnnotation]()
     
     init() {
         super.init(frame: .zero)
@@ -45,11 +55,14 @@ class LocationsMap: UIView {
     
     // MARK: - Creating Annotations
     
-    private func createAnnotation(forLocation: LocationInMap) -> MKPointAnnotation {
-        let annotation = MKPointAnnotation()
+    private func createAnnotation(forLocation: LocationInMap) -> LocationAnnotation {
         let centerCoordinate = CLLocationCoordinate2D(latitude: forLocation.latitude, longitude: forLocation.longitude)
+
+        let annotation = LocationAnnotation()
         annotation.coordinate = centerCoordinate
         annotation.title = forLocation.title
+        annotation.locationId = forLocation.locationId
+        
         return annotation
     }
     
@@ -69,6 +82,19 @@ class LocationsMap: UIView {
     
     private func setupMap() {
         self.addSubview(self.mapView)
+        self.mapView.delegate = self
         self.mapView.autoPinEdgesToSuperviewEdges()
+    }
+    
+    // MARK: - MKMapViewDelegate
+    
+    func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
+        if let annotation = view.annotation as? LocationAnnotation {
+            guard let locationId = annotation.locationId else {
+                Logger.error(message: "LocationAnnotation has no location id!")
+                return
+            }
+            self.delegate?.didTappedLocation(locationId: locationId)
+        }
     }
 }

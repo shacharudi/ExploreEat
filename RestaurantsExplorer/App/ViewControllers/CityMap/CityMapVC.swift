@@ -11,7 +11,7 @@ import RxCocoa
 import RxSwift
 import PureLayout
 
-class CityMapVC: UIViewController, CityMapVCViewModelDelegate {
+class CityMapVC: UIViewController, CityMapVCViewModelDelegate, LocationsMapDelegate {
 
     private let viewModel: CityMapVCViewModel
     private let cityDetailsView = CityDetailsView()
@@ -73,6 +73,7 @@ class CityMapVC: UIViewController, CityMapVCViewModelDelegate {
     
     private func setupCityMap() {
         self.view.addSubview(self.cityMap)
+        self.cityMap.delegate = self
         self.cityMap.autoPinEdgesToSuperviewSafeArea(with: UIEdgeInsets.zero, excludingEdge: .top)
         self.cityMap.autoPinEdge(.top, to: .bottom, of: self.cityDetailsView)
     }
@@ -91,18 +92,13 @@ class CityMapVC: UIViewController, CityMapVCViewModelDelegate {
         self.cityDetailsView.setViewCity(city: city)
     }
     
-    func setMapRestaurnts(restaurntsSearchResults: RestaurntsSearchResultsList) {
-        var locations = [LocationInMap]()
-        restaurntsSearchResults.restaurnts.forEach { restaurnt in
-            locations.append(
-                LocationInMap(
-                    locationId: restaurnt.restaurantId,
-                    title: restaurnt.name,
-                    latitude: restaurnt.latitude,
-                    longitude: restaurnt.longitude
-                )
-            )
-        }
-        self.cityMap.setLocations(locationsInMap: locations)
+    func setMapRestaurnts(locationsInMap: [LocationInMap]) {
+        self.cityMap.setLocations(locationsInMap: locationsInMap)
+    }
+    
+    // MARK: - LocationsMapDelegate
+    
+    func didTappedLocation(locationId: String) {
+        print(locationId)
     }
 }
