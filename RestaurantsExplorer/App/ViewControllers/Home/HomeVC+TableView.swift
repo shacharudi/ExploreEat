@@ -10,16 +10,17 @@ import Foundation
 import UIKit
 
 extension HomeVC: UITableViewDelegate, UITableViewDataSource {
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
-    
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        guard let cities = self.viewModel.citySearchResults.value?.cities else {
+            return 0
+        }
+        return cities.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()        
+        let cell = UITableViewCell()
+        cell.backgroundColor = .red
         return cell
     }
 }

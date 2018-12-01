@@ -100,6 +100,15 @@ class HomeVC: UIViewController {
         self.tableView.dataSource = self
         self.tableView.autoPin(toTopLayoutGuideOf: self, withInset: 0)
         self.tableView.autoPinEdgesToSuperviewEdges(with: UIEdgeInsets.zero, excludingEdge: .top)
+        self.bindTableSearchResults()
+    }
+    
+    private func bindTableSearchResults() {
+        self.viewModel.citySearchResults.asObservable().subscribe { [weak self] event in
+            if event.element != nil {
+                self?.tableView.reloadData()
+            }
+        }.disposed(by: self.disposeBag)
     }
     
     // MARK: - Navigation Bar
@@ -117,6 +126,7 @@ class HomeVC: UIViewController {
         self.searchController.searchBar.placeholder = Texts.homeVCSearchTitle
         self.searchController.hidesNavigationBarDuringPresentation = false
         self.searchController.searchBar.barTintColor = Colors.navigationBar
+        self.searchController.searchBar.tintColor = Colors.textWhite
         self.navigationItem.searchController = searchController
         self.bindSearch()
     }

@@ -40,6 +40,9 @@ class AppContainerVC: UIViewController {
         UINavigationBar.appearance().tintColor = Colors.textWhite
         UINavigationBar.appearance().barTintColor = Colors.navigationBar
         UINavigationBar.appearance().isTranslucent = false
+        
+        let searchColor = [NSAttributedString.Key.foregroundColor: UIColor.white]
+        UITextField.appearance(whenContainedInInstancesOf: [UISearchBar.self]).defaultTextAttributes = searchColor
     }
 }
 
