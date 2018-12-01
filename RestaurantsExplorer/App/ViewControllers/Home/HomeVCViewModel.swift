@@ -18,6 +18,7 @@ protocol HomeVCViewModelType {
     var searchState: Variable<AsyncSearchState> { get }
     var citySearchResults: Variable<CitySearchResultsList?> { get }
     
+    func showPreviousSearches()
     func searchTermChanged(term: String)
 }
 
@@ -42,7 +43,14 @@ class HomeVCViewModel: HomeVCViewModelType {
         }
     }
     
+    public func showPreviousSearches() {
+        self.citySearchResults.value = CitySearchResultsList(cities: [])
+    }
+    
     private func searchReturned(searchResults: CitySearchResultsList) {
+        
+        self.citySearchResults.value = searchResults
+        
         if searchResults.cities.isEmpty {
             self.searchState.value = .noResults
         } else {

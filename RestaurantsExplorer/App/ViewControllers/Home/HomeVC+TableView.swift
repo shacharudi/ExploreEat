@@ -10,24 +10,6 @@ import Foundation
 import UIKit
 
 extension HomeVC: UITableViewDelegate, UITableViewDataSource {
-    
-    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let sectionHeader = UIView()
-        let titleLabel = UILabel()
-        sectionHeader.addSubview(titleLabel)
-
-        titleLabel.autoPinEdgesToSuperviewEdges(with: UIEdgeInsets(top: 5, left: 20, bottom: 0, right: 0))
-        titleLabel.font = Fonts.tableSectionTitle
-        titleLabel.textColor = Colors.sectionTitle
-        titleLabel.text = self.viewModel.tableSectionTitle
-        
-        return sectionHeader
-    }
-    
-    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 30 //Metrics.searchCitySectionHeight
-    }
-    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
