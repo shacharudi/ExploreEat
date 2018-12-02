@@ -14,6 +14,7 @@ ExploreEat is a simple restaurants search tool based on Zomato API
   - Reactive Programming using RxSwift
   - Dependency Injection using Swinject
   - Unit testing (partial coverage)
+  - lint using Swiftlint
 
 ### Installation
 
