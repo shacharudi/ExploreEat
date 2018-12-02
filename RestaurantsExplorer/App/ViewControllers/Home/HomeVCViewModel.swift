@@ -20,6 +20,7 @@ protocol HomeVCViewModelType {
     
     func viewLoaded()
     func searchDismissed()
+    func searchWillPresent()
     func searchTermChanged(term: String)
     func saveSelectedCity(city: City)
 }
@@ -40,6 +41,11 @@ class HomeVCViewModel: HomeVCViewModelType {
     }
     
     public func searchTermChanged(term: String) {
+        guard !term.isEmpty else {
+            let emptyResults = CitySearchResultsList(cities: [])
+            self.searchReturned(searchResults: emptyResults)
+            return
+        }
         self.searchState.value = .loading
         self.searchLocationsService.searchLocation(term: term)
             .then { [weak self] searchResults in
@@ -51,6 +57,10 @@ class HomeVCViewModel: HomeVCViewModelType {
         self.showPreviousSearches()
     }
     
+    public func searchWillPresent() {
+        self.searchTermChanged(term: "")
+    }
+    
     public func saveSelectedCity(city: City) {
         self.database.saveSelectedCity(city: city)
     }
@@ -60,6 +70,8 @@ class HomeVCViewModel: HomeVCViewModelType {
     }
     
     private func searchReturned(searchResults: CitySearchResultsList) {
+        
+        print(searchResults.cities)
         self.citySearchResults.value = searchResults
         
         if searchResults.cities.isEmpty {

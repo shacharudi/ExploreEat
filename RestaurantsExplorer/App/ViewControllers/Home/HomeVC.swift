@@ -22,6 +22,7 @@ class HomeVC: UIViewController {
     private let loadingView = LoadingContentView()
     
     private let disposeBag = DisposeBag()
+    private var canceledSearch = false
     
     init(
         viewModel: HomeVCViewModelType,
@@ -118,9 +119,13 @@ class HomeVC: UIViewController {
     private func bindTableSearchResults() {
         self.viewModel.citySearchResults.asObservable().subscribe { [weak self] event in
             if event.element != nil {
-                self?.tableView.reloadData()
+                self?.searchResulstsChanged()
             }
         }.disposed(by: self.disposeBag)
+    }
+    
+    private func searchResulstsChanged() {
+        self.tableView.reloadData()
     }
     
     // MARK: - Navigation Bar
@@ -140,6 +145,8 @@ class HomeVC: UIViewController {
         self.searchController.dimsBackgroundDuringPresentation = false
         self.searchController.searchBar.barTintColor = Colors.navigationBar
         self.searchController.searchBar.tintColor = Colors.textWhite
+        
+        self.searchController.delegate = self
         self.navigationItem.searchController = searchController
         self.bindSearch()
     }
@@ -152,8 +159,17 @@ class HomeVC: UIViewController {
         .debounce(0.3, scheduler: MainScheduler.instance)
         .distinctUntilChanged()
         .subscribe(onNext: { [weak self] searchTerm in
+            guard self?.canceledSearch == false else {
+                self?.canceledSearch = false
+                return
+            }
             self?.viewModel.searchTermChanged(term: searchTerm)
         }).disposed(by: self.disposeBag)
+        
+        self.searchController.searchBar.rx.cancelButtonClicked
+            .subscribe(onNext: { [weak self] _ in
+                self?.canceledSearch = true
+            }).disposed(by: self.disposeBag)
     }
     
     // MARK: - Navigation Actions
@@ -173,6 +189,13 @@ class HomeVC: UIViewController {
         let cityMapVC = self.cityMapFactory.create(cityId: city.cityId)
         self.navigationController?.pushViewController(cityMapVC, animated: true)
     }
-    
-    // TODO: notify viewmodel when search is dismissed to show previos searches
+}
+
+extension HomeVC: UISearchControllerDelegate {
+    func willPresentSearchController(_ searchController: UISearchController) {
+        self.viewModel.searchWillPresent()
+    }
+    func willDismissSearchController(_ searchController: UISearchController) {
+        self.viewModel.searchDismissed()
+    }
 }
