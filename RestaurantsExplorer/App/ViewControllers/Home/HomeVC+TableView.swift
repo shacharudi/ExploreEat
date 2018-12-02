@@ -46,5 +46,6 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
             return
         }
         self.didSelectCity(city: city)
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }

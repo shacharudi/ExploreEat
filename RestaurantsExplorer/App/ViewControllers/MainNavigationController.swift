@@ -17,9 +17,15 @@ class MainNavigationController: UINavigationController {
         self.homeVC = homeVC
         super.init(nibName: nil, bundle: nil)
         self.setViewControllers([self.homeVC], animated: false)
+        self.styleNavigationBar()
     }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    private func styleNavigationBar() {
+        let textAttributes = [NSAttributedString.Key.foregroundColor: Colors.textWhite]
+        self.navigationBar.titleTextAttributes = textAttributes
     }
 }
