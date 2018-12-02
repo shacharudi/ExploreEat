@@ -132,9 +132,9 @@ class HomeVC: UIViewController {
     
     private func setupNavigationButtons() {
         let plusButton = UIBarButtonItem.init(
-            image: Icons.plusIcon,
+            image: Icons.trashIcon,
             style: .plain, target: self,
-            action: #selector(self.tappedPlusButton)
+            action: #selector(self.tappedTrashIcon)
         )
         self.navigationItem.rightBarButtonItem  = plusButton
     }
@@ -174,8 +174,20 @@ class HomeVC: UIViewController {
     
     // MARK: - Navigation Actions
     
-    @objc private func tappedPlusButton() {
-        
+    @objc private func tappedTrashIcon() {
+        let options = AlertPresentorOptions(
+            titie: Texts.TrashSearchesAlert.title,
+            message: Texts.TrashSearchesAlert.message,
+            okTitle: Texts.TrashSearchesAlert.okButton,
+            cancelTitle: Texts.TrashSearchesAlert.cancelButton,
+            okHandler: self.onClearPreviousSearches, cancelHandler: nil,
+            onVC: self
+        )
+        AlertPresentor.showAlert(options: options)
+    }
+    
+    @objc func onClearPreviousSearches() {
+        self.viewModel.clearPrevoiusSearches()
     }
     
     // MARK: - Presenting City Map

@@ -10,5 +10,6 @@ import Foundation
 import SwiftIcons
 
 enum Icons {
+    static let trashIcon = UIImage.init(icon: .fontAwesomeRegular(.trashAlt), size: CGSize(width: 30, height: 30))
     static let plusIcon = UIImage.init(icon: .fontAwesomeRegular(.plusSquare), size: CGSize(width: 30, height: 30))    
 }

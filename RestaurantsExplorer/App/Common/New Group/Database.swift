@@ -13,6 +13,7 @@ protocol DatabaseType {
     func saveSelectedCity(city: City)
     func getPreviousSearches() -> [City]
     func getCityById(cityId: String) -> City?
+    func clearAllCities()
 }
 
 // swiftlint:disable force_try
@@ -34,6 +35,16 @@ class Database: DatabaseType {
         let realm = self.getRealm()
         let elements = realm.objects(City.self)
         return Array(elements)
+    }
+    
+    public func clearAllCities() {
+        let realm = self.getRealm()
+        let cities = realm.objects(City.self)
+        
+        try! realm.write {
+            realm.delete(cities)
+            realm.refresh()
+        }
     }
     
     private func getRealm() -> Realm {

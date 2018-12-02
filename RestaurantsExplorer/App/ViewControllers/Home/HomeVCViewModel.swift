@@ -23,6 +23,7 @@ protocol HomeVCViewModelType {
     func searchWillPresent()
     func searchTermChanged(term: String)
     func saveSelectedCity(city: City)
+    func clearPrevoiusSearches()
 }
 
 class HomeVCViewModel: HomeVCViewModelType {
@@ -69,9 +70,12 @@ class HomeVCViewModel: HomeVCViewModelType {
         self.showPreviousSearches()
     }
     
+    public func clearPrevoiusSearches() {
+        self.database.clearAllCities()
+        self.showPreviousSearches()
+    }
+    
     private func searchReturned(searchResults: CitySearchResultsList) {
-        
-        print(searchResults.cities)
         self.citySearchResults.value = searchResults
         
         if searchResults.cities.isEmpty {
