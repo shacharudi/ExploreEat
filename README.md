@@ -3,8 +3,8 @@
 ExploreEat is a simple restaurants search tool based on Zomato API
 ##### Features
   - Find a city by name
-  - Map of restaurnts in the selected city
-  - View restaurnt details
+  - Map of restaurants in the selected city
+  - View restaurant details
 
 ##### This project is built using Swift 4.2 and it demonstrates the use of:
   - MVVM Architecture in iOS
